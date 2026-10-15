@@ -1,0 +1,256 @@
+﻿========================================  Pack 1  Pick 1
+ 58.4  End of the Hunt               GIH=58.4
+ 57.9  Rubble Rouser                 GIH=57.9
+ 57.4  Last Gasp                     GIH=57.4
+ 56.9  Essence Scatter               GIH=56.9
+ 55.9  Heated Argument               GIH=55.5  fit=+0.4(x0.90)
+ 55.4  Noxious Newt                  GIH=55.4
+ 55.4  Ascendant Dustspeaker         GIH=55.3  fit=+0.1(x0.45)
+ 55.3  Fracture                      GIH=55.3
+ 54.7  Chase Inspiration             GIH=54.3  fit=+0.4(x0.85)
+ 53.2  Cuboid Colony                 GIH=56.2  lock=-3.0
+ 53.0  Emil, Vastlands Roamer        GIH=53.0
+ 52.7  Pull from the Grave           GIH=52.7  fit=+0.0(x0.40)
+ 52.1  Bogwater Lumaret              GIH=55.1  lock=-3.0
+ 49.9  Ancestral Anger               GIH=52.7  fit=+0.2(x0.65)  lock=-3.0
+========================================  Pack 1  Pick 2
+ 56.3  Royal Treatment               GIH=56.1  fit=+0.4(x0.44)  pool=-0.2
+ 56.0  Melancholic Poet              GIH=56.0
+ 55.3  Expressive Firedancer         GIH=55.3  fit=+0.2(x0.56)  pool=-0.2
+ 55.2  Fracture                      GIH=55.3  pool=-0.1
+ 55.2  Ascendant Dustspeaker         GIH=55.3  fit=+0.1(x0.36)  pool=-0.2
+ 54.4  Chase Inspiration             GIH=54.3  fit=+0.3(x0.68)  pool=-0.2
+ 54.1  Rapier Wit                    GIH=54.3  fit=+0.0(x0.16)  pool=-0.2
+ 53.8  Grapple with Death            GIH=56.5  lock=-2.6  pool=-0.1
+ 52.9  Sneering Shadewriter          GIH=52.7  fit=+0.2(x0.40)
+ 52.3  Procrastinate                 GIH=52.2  fit=+0.3(x0.68)  pool=-0.2
+ 52.2  Tenured Concocter             GIH=52.2  fit=+0.2(x0.64)  pool=-0.2
+ 49.2  Oracle's Restoration          GIH=49.4  pool=-0.2
+ 48.2  Skycoach Waypoint             GIH=49.7  fit=+1.5(x0.75)  fix=-3.00
+ 45.3  Fractal Anomaly               GIH=48.5  lock=-3.0  pool=-0.2
+========================================  Pack 1  Pick 3
+ 55.6  Quick Study                   GIH=56.0  pool=-0.4
+ 55.6  Practiced Scrollsmith         GIH=59.0  lock=-3.0  pool=-0.4
+ 55.1  Melancholic Poet              GIH=56.0→55.1
+ 53.9  Rapier Wit                    GIH=54.3  fit=+0.0(x0.13)  pool=-0.4
+ 53.2  Paradox Gardens               GIH=56.2  fix=-3.00
+ 52.8  Pull from the Grave           GIH=52.7→52.8  fit=+0.0(x0.50)
+ 52.5  Tackle Artist                 GIH=52.7  fit=+0.1(x0.47)  pool=-0.4
+ 52.0  Geometer's Arthropod          GIH=54.8  lock=-2.6  pool=-0.2
+ 52.0  Follow the Lumarets           GIH=51.7→51.9  fit=+0.1(x0.47)
+ 51.5  Wild Hypothesis               GIH=52.2→51.5
+ 49.6  Oracle's Restoration          GIH=49.4→49.6  fit=+0.0(x0.25)
+ 46.4  Rearing Embermare             GIH=49.7  fit=+0.0(x0.17)  lock=-3.0  pool=-0.4
+ 46.0  Daydream                      GIH=48.9  fit=+0.1(x0.17)  lock=-2.6  pool=-0.4
+========================================  Pack 1  Pick 4
+ 55.4  Shattered Acolyte             GIH=55.9  fit=+0.1(x0.20)  pool=-0.6
+ 55.2  Stargaze                      GIH=55.0  fit=+0.2(x0.36)
+ 54.9  Expressive Firedancer         GIH=55.3  fit=+0.1(x0.40)  pool=-0.6
+ 54.4  Render Speechless             GIH=57.3  lock=-2.6  pool=-0.3
+ 54.1  Zealous Lorecaster            GIH=54.7  pool=-0.6
+ 53.7  Shopkeeper's Bane             GIH=53.2→53.4  fit=+0.3(x0.68)
+ 53.1  Page, Loose Leaf              GIH=52.7→53.1
+ 52.9  Teacher's Pest                GIH=54.6→54.9  fit=+0.2(x0.25)  lock=-2.1
+ 52.9  Pull from the Grave           GIH=52.7→52.9  fit=+0.0(x0.46)
+ 52.7  Procrastinate                 GIH=52.2→52.4  fit=+0.3(x0.71)
+ 52.6  Tenured Concocter             GIH=52.2→52.4  fit=+0.2(x0.68)
+========================================  Pack 1  Pick 4
+ 56.3  Render Speechless             GIH=57.3→57.8  fit=+0.2(x0.25)  open=+0.40  lock=-2.1
+ 56.2  Stargaze                      GIH=55.0→55.5  fit=+0.2(x0.48)  open=+0.48
+ 54.9  Expressive Firedancer         GIH=55.3  fit=+0.1(x0.35)  open=+0.26  pool=-0.8
+ 54.2  Zealous Lorecaster            GIH=54.7  open=+0.26  pool=-0.8
+ 53.4  Pull from the Grave           GIH=52.7→53.0  fit=+0.0(x0.44)  open=+0.48
+ 53.3  Shopkeeper's Bane             GIH=53.2→53.5  fit=+0.2(x0.63)  open=-0.42
+ 53.3  Page, Loose Leaf              GIH=52.7→53.3
+ 53.0  Teacher's Pest                GIH=54.6→55.0  fit=+0.2(x0.25)  lock=-2.1
+ 52.2  Tenured Concocter             GIH=52.2→52.5  fit=+0.2(x0.62)  open=-0.42
+ 52.0  Procrastinate                 GIH=52.2→52.5  fit=+0.3(x0.65)  open=-0.79
+========================================  Pack 1  Pick 5
+ 55.9  Send in the Pest              GIH=55.0→55.4  fit=+0.1(x0.25)  open=+0.48
+ 54.5  Seize the Spoils              GIH=55.0  open=+0.26  pool=-0.8
+ 53.4  Pull from the Grave           GIH=52.7→53.0  fit=+0.0(x0.44)  open=+0.48
+ 52.6  Fractal Mascot                GIH=54.1→54.8  fit=+0.3(x0.25)  open=-0.30  lock=-2.1
+ 52.4  Wild Hypothesis               GIH=52.2→52.9  fit=+0.0(x0.25)  open=-0.42
+ 52.4  Glorious Decay                GIH=51.3→52.8  fit=+0.0(x0.25)  open=-0.42
+ 52.3  Tackle Artist                 GIH=52.7  fit=+0.1(x0.35)  open=+0.26  pool=-0.8
+ 51.7  Elemental Mascot              GIH=54.6  lock=-2.6  pool=-0.4
+ 49.0  Triumph of the Hordes         GIH=49.0  fit=+0.4(x0.25)  open=-0.42
+ 49.0  Social Snub                   GIH=51.2→50.7  fit=+0.0(x0.17)  open=+0.40  lock=-2.1
+========================================  Pack 1  Pick 6
+ 56.7  Dig Site Inventory            GIH=55.4→56.5  fit=+0.1(x0.25)  open=+0.15
+ 55.7  Killian's Confidence          GIH=56.5→57.1  fit=+0.2(x0.25)  open=+0.15  lock=-1.7
+ 54.5  Rancorous Archaic             GIH=53.6→54.2  fit=+0.2(x0.25)
+ 53.7  Culling Ritual                GIH=53.1  fit=+0.4(x0.25)  open=+0.27
+ 53.5  Pull from the Grave           GIH=52.7→53.0  fit=+0.0(x0.45)  open=+0.46
+ 53.5  Page, Loose Leaf              GIH=52.7→53.5
+ 53.3  Visionary's Dance             GIH=56.3  lock=-2.6  pool=-0.5
+ 53.1  Spectacle Summit              GIH=56.4→56.1  fix=-3.00
+ 52.0  Tackle Artist                 GIH=52.7  fit=+0.1(x0.31)  open=+0.19  pool=-0.9
+ 49.3  Efflorescence                 GIH=49.2→50.0  fit=+0.0(x0.25)  open=+0.62  lock=-1.3
+========================================  Pack 1  Pick 7
+ 57.5  Interjection                  GIH=55.7→56.5  fit=+0.0(x0.50)  open=+1.02
+ 56.5  Rehearsed Debater             GIH=54.7→55.5  fit=+0.0(x0.51)  open=+1.02
+ 53.7  Wild Hypothesis               GIH=52.2→53.2  fit=+0.0(x0.25)  open=+0.56
+ 53.4  Deluge Virtuoso               GIH=51.9→52.9  fit=+0.3(x0.42)  open=+0.17
+ 53.1  Procrastinate                 GIH=52.2→52.6  fit=+0.3(x0.57)  open=+0.17
+ 53.1  Forum Necroscribe             GIH=51.4→52.5  fit=+0.1(x0.50)  open=+0.53
+ 53.0  Follow the Lumarets           GIH=51.7→52.4  fit=+0.1(x0.38)  open=+0.56
+ 50.9  Stadium Tidalmage             GIH=54.0  lock=-2.6  pool=-0.6
+========================================  Pack 1  Pick 8
+ 55.6  Hydro-Channeler               GIH=54.8→55.2  open=+0.39
+ 54.4  Glorious Decay                GIH=51.3→54.0  fit=+0.0(x0.25)  open=+0.35
+ 54.0  Brain Freeze                  GIH=55.5→54.7  open=+0.39  lock=-1.1
+ 53.5  Forum Necroscribe             GIH=51.4→52.7  fit=+0.1(x0.50)  open=+0.72
+ 52.8  Muse's Encouragement          GIH=52.7→52.4  fit=+0.0(x0.32)  open=+0.39
+ 51.4  Elemental Mascot              GIH=54.6  lock=-2.6  pool=-0.7
+ 50.9  Harsh Annotation              GIH=50.0→50.5  fit=+0.5(x0.82)  open=+0.74  lock=-0.9
+========================================  Pack 1  Pick 9
+ 56.8  Fracture                      GIH=55.3  fit=+0.8(x0.50)  open=+0.83
+ 56.3  Cuboid Colony                 GIH=56.2→57.4  fit=+0.3(x0.25)  open=+0.29  lock=-1.7
+ 54.7  Emil, Vastlands Roamer        GIH=53.0→54.4  fit=+0.0(x0.25)  open=+0.30
+ 54.6  Bogwater Lumaret              GIH=55.1→55.8  fit=+0.2(x0.25)  open=+0.31  lock=-1.7
+ 54.1  Pull from the Grave           GIH=52.7→53.2  fit=+0.0(x0.40)  open=+0.95
+ 50.8  Ancestral Anger               GIH=52.7  fit=+0.1(x0.22)  open=+0.35  lock=-0.9  pool=-1.5
+========================================  Pack 1  Pick 10
+ 54.9  Sneering Shadewriter          GIH=52.7→53.7  fit=+0.3(x0.70)  open=+0.89
+ 53.9  Procrastinate                 GIH=52.2→52.8  fit=+0.2(x0.54)  open=+0.87
+ 53.6  Tenured Concocter             GIH=52.2→52.7  fit=+0.1(x0.48)  open=+0.78
+ 51.1  Oracle's Restoration          GIH=49.4→50.3  fit=+0.0(x0.25)  open=+0.78
+ 50.7  Skycoach Waypoint             GIH=49.7→51.9  fit=+1.8(x0.91)  fix=-3.00
+ 46.7  Fractal Anomaly               GIH=48.5→47.5  open=+0.87  lock=-1.7
+========================================  Pack 1  Pick 12
+ 53.8  Pull from the Grave           GIH=52.7→53.2  fit=+0.0(x0.57)  open=+0.59
+ 53.5  Tenured Concocter             GIH=52.2→52.7  fit=+0.2(x0.63)  open=+0.52
+ 53.5  Procrastinate                 GIH=52.2→52.8  fit=+0.3(x0.65)  open=+0.57  curve=-0.14
+========================================  Pack 1  Pick 13
+ 50.5  Social Snub                   GIH=51.2→50.2  fit=+0.0(x0.56)  open=+0.42  curve=-0.14
+ 50.1  Triumph of the Hordes         GIH=49.0  fit=+0.7(x0.44)  open=+0.47
+========================================  Pack 1  Pick 1
+ 58.4  End of the Hunt               GIH=58.4
+ 57.9  Rubble Rouser                 GIH=57.9
+ 57.6  Unsubtle Mockery              GIH=57.5  fit=+0.1(x0.55)
+ 57.4  Last Gasp                     GIH=57.4
+ 56.0  Melancholic Poet              GIH=56.0
+ 56.0  Masterful Flourish            GIH=56.0
+ 55.4  Owlin Historian               GIH=55.4  fit=+0.0(x0.15)
+ 54.8  Hydro-Channeler               GIH=54.8
+ 53.5  Withering Curse               GIH=53.5
+ 52.9  Sneering Shadewriter          GIH=52.7  fit=+0.2(x0.40)
+ 52.9  Forum of Amity                GIH=55.9  fix=-3.00
+ 52.2  Wild Hypothesis               GIH=52.2
+ 51.0  Stadium Tidalmage             GIH=54.0  lock=-3.0
+ 48.2  Social Snub                   GIH=51.2  lock=-3.0
+ 48.0  Graduation Day                GIH=51.0  lock=-3.0
+========================================  Pack 1  Pick 3
+ 55.8  Eager Glyphmage               GIH=56.0  fit=+0.2(x0.37)  pool=-0.4
+ 55.8  Archaic's Agony               GIH=56.2  pool=-0.4
+ 55.6  Quick Study                   GIH=56.0  pool=-0.4
+ 55.4  Heated Argument               GIH=55.5  fit=+0.2(x0.60)  pool=-0.4
+ 54.8  Shared Roots                  GIH=55.2  pool=-0.4
+ 53.8  Inkling Mascot                GIH=56.1  lock=-2.1  pool=-0.2
+ 53.5  Wilt in the Heat              GIH=56.9  lock=-3.0  pool=-0.4
+ 52.9  Forum of Amity                GIH=55.9  fix=-3.00
+ 52.7  Pull from the Grave           GIH=52.7  fit=+0.0(x0.40)
+ 52.0  Tenured Concocter             GIH=52.2  fit=+0.2(x0.53)  pool=-0.4
+ 51.8  Deluge Virtuoso               GIH=51.9  fit=+0.2(x0.30)  pool=-0.4
+ 50.6  Stadium Tidalmage             GIH=54.0  lock=-3.0  pool=-0.4
+ 48.6  Triumph of the Hordes         GIH=49.0  pool=-0.4
+========================================  Pack 1  Pick 4
+ 55.4  Shattered Acolyte             GIH=55.9  fit=+0.1(x0.20)  pool=-0.6
+ 54.8  Owlin Historian               GIH=55.4  fit=+0.0(x0.09)  pool=-0.6
+ 54.7  Zealous Lorecaster            GIH=54.7
+ 54.6  Eternal Student               GIH=54.3  fit=+0.3(x0.77)
+ 54.3  Primary Research              GIH=54.9  pool=-0.6
+ 53.7  Masterful Flourish            GIH=56.0→53.7
+ 52.8  Shopkeeper's Bane             GIH=53.2  fit=+0.2(x0.46)  pool=-0.6
+ 52.1  Muse Seeker                   GIH=52.6  fit=+0.1(x0.51)  pool=-0.6
+ 51.8  Tenured Concocter             GIH=52.2  fit=+0.1(x0.46)  pool=-0.6
+ 47.2  Rearing Embermare             GIH=49.7  fit=+0.0(x0.18)  lock=-2.6
+ 41.6  Choreographed Sparks          GIH=44.2  lock=-2.6
+========================================  Pack 1  Pick 7
+ 56.5  Owlin Historian               GIH=55.4→56.0  fit=+0.0(x0.54)  open=+0.49
+ 54.5  Planar Engineering            GIH=56.0  open=-0.33  pool=-1.1
+ 54.0  Forum of Amity                GIH=55.9→56.6  fit=+0.4(x0.50)  fix=-3.00
+ 53.9  Noxious Newt                  GIH=55.4  open=-0.33  pool=-1.1
+ 52.6  Pull from the Grave           GIH=52.7→52.2  fit=+0.0(x0.24)  open=+0.43
+ 51.2  Old-Growth Educator           GIH=53.9  lock=-2.1  pool=-0.6
+ 51.0  Muse's Encouragement          GIH=52.7  fit=+0.0(x0.28)  open=-0.61  pool=-1.1
+ 51.0  Harsh Annotation              GIH=50.0→50.5  fit=+0.5(x0.80)  open=+0.49  lock=-0.4
+ 50.7  Wild Hypothesis               GIH=52.2  open=-0.33  pool=-1.1
+========================================  Pack 1  Pick 10
+ 51.7  Wild Hypothesis               GIH=52.2  open=+0.95  pool=-1.5
+ 50.8  Glorious Decay                GIH=51.3  open=+0.95  pool=-1.5
+ 49.9  Fractalize                    GIH=51.5  open=-0.10  pool=-1.5
+ 48.8  Ulna Alley Shopkeep           GIH=49.0→49.4  fit=+0.2(x0.45)  lock=-0.9
+ 47.3  Abstract Paintmage            GIH=50.2  lock=-2.1  pool=-0.8
+ 46.5  Efflorescence                 GIH=49.2  open=+0.95  lock=-2.1  pool=-1.5
+========================================  Pack 1  Pick 12
+ 53.1  Tenured Concocter             GIH=52.2→52.3  fit=+0.1(x0.34)  open=+0.59  curve=+0.15
+ 51.0  Rearing Embermare             GIH=49.7→50.7  fit=+0.2(x0.67)  open=+0.40  curve=+0.15  lock=-0.4
+ 42.3  Choreographed Sparks          GIH=44.2  open=+0.40  curve=-0.14  lock=-2.1
+========================================  Pack 1  Pick 1
+ 61.8  Mathemagics                   GIH=61.8
+ 58.2  Abrade                        GIH=58.1  fit=+0.1(x0.85)
+ 56.9  Disdainful Stroke             GIH=56.9
+ 56.6  Stone Docent                  GIH=56.5  fit=+0.1(x0.35)
+ 56.0  Shattered Acolyte             GIH=55.9  fit=+0.1(x0.35)
+ 55.9  Heated Argument               GIH=55.5  fit=+0.4(x0.90)
+ 55.8  Wander Off                    GIH=55.8
+ 55.4  Noxious Newt                  GIH=55.4
+ 54.7  Rehearsed Debater             GIH=54.7
+ 54.7  Chase Inspiration             GIH=54.3  fit=+0.4(x0.85)
+ 53.6  Mindful Biomancer             GIH=53.4  fit=+0.2(x0.60)
+ 53.2  Helping Hand                  GIH=53.1  fit=+0.1(x0.25)
+ 52.9  Tackle Artist                 GIH=52.7  fit=+0.2(x0.70)
+ 52.9  Forum of Amity                GIH=55.9  fix=-3.00
+ 51.8  Follow the Lumarets           GIH=51.7  fit=+0.1(x0.35)
+========================================  Pack 1  Pick 2
+ 57.4  Unsubtle Mockery              GIH=57.5  fit=+0.1(x0.44)  pool=-0.2
+ 57.2  Last Gasp                     GIH=57.4  pool=-0.2
+ 56.5  Knockout Maneuver             GIH=56.6  fit=+0.1(x0.16)  pool=-0.2
+ 55.8  Shattered Acolyte             GIH=55.9  fit=+0.1(x0.28)  pool=-0.2
+ 55.4  Banishing Betrayal            GIH=55.2  fit=+0.2(x0.70)
+ 55.2  Mind into Matter              GIH=57.9  lock=-2.6  pool=-0.1
+ 54.8  Send in the Pest              GIH=55.0  pool=-0.2
+ 54.7  Chase Inspiration             GIH=54.3  fit=+0.4(x0.85)
+ 54.0  Imperious Inkmage             GIH=57.2  lock=-3.0  pool=-0.2
+ 51.4  Teacher's Pest                GIH=54.6  lock=-3.0  pool=-0.2
+ 50.9  Pterafractyl                  GIH=53.6  lock=-2.6  pool=-0.1
+ 49.2  Oracle's Restoration          GIH=49.4  pool=-0.2
+ 42.5  Biblioplex Tomekeeper         GIH=45.5  lock=-3.0
+========================================  Pack 1  Pick 5
+ 56.1  Heated Argument               GIH=55.5→55.8  fit=+0.3(x0.84)
+ 56.0  Sleight of Hand               GIH=55.8→56.0  fit=+0.0(x0.78)
+ 55.4  Hydro-Channeler               GIH=54.8→55.4  fit=+0.0(x0.25)
+ 55.2  Masterful Flourish            GIH=56.0  pool=-0.8
+ 55.0  Wander Off                    GIH=55.8  pool=-0.8
+ 54.6  Owlin Historian               GIH=55.4  fit=+0.0(x0.07)  pool=-0.8
+ 54.6  Noxious Newt                  GIH=55.4  pool=-0.8
+ 54.6  Ascendant Dustspeaker         GIH=55.3  fit=+0.0(x0.22)  pool=-0.8
+ 54.5  Veil of Summer                GIH=55.3  pool=-0.8
+ 53.7  Cuboid Colony                 GIH=56.2  lock=-2.1  pool=-0.4
+ 53.2  Tackle Artist                 GIH=52.7→53.0  fit=+0.2(x0.76)
+========================================  Pack 1  Pick 9
+ 55.2  Shattered Acolyte             GIH=55.9  fit=+0.0(x0.12)  open=+0.78  pool=-1.5
+ 55.0  Chase Inspiration             GIH=54.3→54.9  fit=+0.4(x0.80)  open=+0.73  dup=-1
+ 54.2  Tackle Artist                 GIH=52.7→53.3  fit=+0.2(x0.81)  open=+0.64
+ 54.0  Rehearsed Debater             GIH=54.7  open=+0.78  pool=-1.5
+ 53.2  Mindful Biomancer             GIH=53.4  fit=+0.1(x0.20)  open=+1.20  pool=-1.5
+ 52.4  Helping Hand                  GIH=53.1  fit=+0.0(x0.08)  open=+0.78  pool=-1.5
+ 51.4  Follow the Lumarets           GIH=51.7  fit=+0.0(x0.12)  open=+1.20  pool=-1.5
+========================================  Pack 1  Pick 10
+ 54.7  Chase Inspiration             GIH=54.3→54.9  fit=+0.4(x0.78)  open=+0.48  dup=-1
+ 51.0  Pterafractyl                  GIH=53.6  lock=-1.7  pool=-0.8
+ 49.9  Teacher's Pest                GIH=54.6  lock=-3.0  pool=-1.7
+ 48.5  Oracle's Restoration          GIH=49.4  open=+0.74  pool=-1.7
+ 42.9  Biblioplex Tomekeeper         GIH=45.5  lock=-2.6
+========================================  Pack 1  Pick 11
+ 52.1  Shopkeeper's Bane             GIH=53.2  fit=+0.1(x0.23)  open=+0.64  pool=-1.9
+ 51.2  Rearing Embermare             GIH=49.7→50.7  fit=+0.1(x0.33)  open=+0.46
+ 51.0  Tenured Concocter             GIH=52.2  fit=+0.1(x0.23)  open=+0.64  pool=-1.9
+ 46.5  Rabid Attack                  GIH=50.4  open=+0.56  lock=-2.6  pool=-1.9
+========================================  Pack 1  Pick 12
+ 55.8  Spirit Mascot                 GIH=55.5→55.9  fit=+0.1(x0.20)  open=+0.24  lock=-0.4
+ 48.3  Locust Spray                  GIH=52.1  open=+0.53  curve=-0.14  lock=-2.1  pool=-2.0
+ 47.1  Witherbloom, the Balancer     GIH=50.6  lock=-2.6  pool=-1.0
+ 45.6  Ulna Alley Shopkeep           GIH=49.0  fit=+0.1(x0.24)  open=+0.53  curve=+0.15  lock=-2.1  pool=-2.0

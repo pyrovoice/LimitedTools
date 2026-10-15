@@ -1,0 +1,23 @@
+Color	Wins	# Games	Win Rate
+Two-color	491406	885124	55.5%
+Azorius (WU)	220	460	47.8%
+Dimir (UB)	511	1040	49.1%
+Rakdos (BR)	340	672	50.6%
+Gruul (RG)	704	1328	53.0%
+Selesnya (GW)	239	464	51.5%
+Orzhov (WB)	111730	195051	57.3%
+Golgari (BG)	77229	142809	54.1%
+Simic (GU)	58138	106721	54.5%
+Izzet (UR)	113496	210211	54.0%
+Boros (RW)	128799	226368	56.9%
+Three-color	111866	213263	52.5%
+Jeskai (WUR)	20625	38239	53.9%
+Sultai (UBG)	23240	44241	52.5%
+Mardu (BRW)	9439	18833	50.1%
+Temur (RGU)	48368	91646	52.8%
+Abzan (GWB)	5532	11520	48.0%
+Esper (WUB)	232	502	46.2%
+Grixis (UBR)	2070	3770	54.9%
+Jund (BRG)	917	1748	52.5%
+Naya (RGW)	812	1516	53.6%
+Bant (GWU)	631	1248	50.6%

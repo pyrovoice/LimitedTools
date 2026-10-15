@@ -1,0 +1,63 @@
+[package]
+name = "manasight-parser"
+version = "0.5.0"
+edition = "2021"
+description = "MTG Arena log file parser — reads Player.log and emits typed game events"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/manasight/manasight-parser"
+readme = "README.md"
+rust-version = "1.93.0"
+keywords = ["mtg-arena", "parser", "log", "magic-the-gathering"]
+categories = ["parser-implementations", "games"]
+
+[[bin]]
+name = "scrub"
+path = "src/bin/scrub.rs"
+required-features = ["tailer"]
+
+[dependencies]
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+flate2 = "1"
+log = "0.4"
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.11"
+thiserror = "2"
+tokio = { version = "1", features = ["rt", "sync", "fs", "io-util", "time", "macros"], optional = true }
+
+[target.'cfg(target_os = "windows")'.dependencies]
+known-folders = { version = "1", optional = true }
+
+[dev-dependencies]
+proptest = "1"
+tempfile = "3"
+
+[features]
+default = ["brace_depth_flush", "tailer"]
+# Flush multi-line entries on JSON brace-balance instead of waiting for the
+# next header. Default-on; the flag exists as reversibility insurance so a
+# regression can be shipped without code edits by flipping the default.
+brace_depth_flush = []
+# File tailer, log discovery, async event stream, and event bus. Pulls in
+# tokio and known-folders. Disable to build a pure-sync WASM-compatible
+# subset of the crate (see `parse_whole_log`).
+tailer = ["dep:tokio", "dep:known-folders"]
+
+[lints.clippy]
+# Pedantic lints as warnings
+pedantic = { level = "warn", priority = -1 }
+# Restriction lints denied
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+todo = "deny"
+dbg_macro = "deny"
+print_stdout = "deny"
+print_stderr = "deny"
+# Allow some pedantic lints that are too noisy
+module_name_repetitions = "allow"
+must_use_candidate = "allow"
+missing_errors_doc = "allow"
+missing_panics_doc = "allow"

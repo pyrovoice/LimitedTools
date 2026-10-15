@@ -1,0 +1,192 @@
+[UnityCrossThreadLogger]6/16/2026 07:30:00 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 0, "PackCards": "102764,102779,102466,102654,102651,102648,102538,102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:30:30 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102764], \"Pack\": 0, \"Pick\": 0}"}
+[UnityCrossThreadLogger]6/16/2026 07:30:31 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:30:33 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 1, "PackCards": "102779,102466,102654,102651,102648,102538,102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:30:58 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102779], \"Pack\": 0, \"Pick\": 1}"}
+[UnityCrossThreadLogger]6/16/2026 07:30:59 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:31:01 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 2, "PackCards": "102466,102654,102651,102648,102538,102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:31:27 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102466], \"Pack\": 0, \"Pick\": 2}"}
+[UnityCrossThreadLogger]6/16/2026 07:31:28 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:31:30 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 3, "PackCards": "102654,102651,102648,102538,102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:32:05 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102654], \"Pack\": 0, \"Pick\": 3}"}
+[UnityCrossThreadLogger]6/16/2026 07:32:06 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:32:08 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 4, "PackCards": "102651,102648,102538,102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:32:26 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102651], \"Pack\": 0, \"Pick\": 4}"}
+[UnityCrossThreadLogger]6/16/2026 07:32:27 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:32:29 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 5, "PackCards": "102648,102538,102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:32:58 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102648], \"Pack\": 0, \"Pick\": 5}"}
+[UnityCrossThreadLogger]6/16/2026 07:32:59 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:33:01 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 6, "PackCards": "102538,102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:33:40 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102538], \"Pack\": 0, \"Pick\": 6}"}
+[UnityCrossThreadLogger]6/16/2026 07:33:41 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:33:43 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 7, "PackCards": "102536,102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:34:13 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102536], \"Pack\": 0, \"Pick\": 7}"}
+[UnityCrossThreadLogger]6/16/2026 07:34:14 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:34:16 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 8, "PackCards": "102692,102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:34:30 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102692], \"Pack\": 0, \"Pick\": 8}"}
+[UnityCrossThreadLogger]6/16/2026 07:34:31 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:34:33 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 9, "PackCards": "102500,102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:34:43 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102500], \"Pack\": 0, \"Pick\": 9}"}
+[UnityCrossThreadLogger]6/16/2026 07:34:44 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:34:46 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 10, "PackCards": "102528,102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:35:25 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102528], \"Pack\": 0, \"Pick\": 10}"}
+[UnityCrossThreadLogger]6/16/2026 07:35:26 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:35:28 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 11, "PackCards": "102672,102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:35:44 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102672], \"Pack\": 0, \"Pick\": 11}"}
+[UnityCrossThreadLogger]6/16/2026 07:35:45 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:35:47 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 12, "PackCards": "102632,102566"}
+[UnityCrossThreadLogger]6/16/2026 07:36:01 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102632], \"Pack\": 0, \"Pick\": 12}"}
+[UnityCrossThreadLogger]6/16/2026 07:36:02 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:36:04 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 0, "SelfPick": 13, "PackCards": "102566"}
+[UnityCrossThreadLogger]6/16/2026 07:36:48 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102566], \"Pack\": 0, \"Pick\": 13}"}
+[UnityCrossThreadLogger]6/16/2026 07:36:49 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:36:51 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 0, "PackCards": "102570,102715,102608,102685,102463,102631,102590,102714,102788,102759,102509,102487,102724,102579"}
+[UnityCrossThreadLogger]6/16/2026 07:37:14 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102570], \"Pack\": 1, \"Pick\": 0}"}
+[UnityCrossThreadLogger]6/16/2026 07:37:15 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:37:17 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 1, "PackCards": "102715,102608,102685,102463,102631,102590,102714,102788,102759,102509,102487,102724,102579"}
+[UnityCrossThreadLogger]6/16/2026 07:37:59 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102715], \"Pack\": 1, \"Pick\": 1}"}
+[UnityCrossThreadLogger]6/16/2026 07:38:00 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:38:02 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 2, "PackCards": "102608,102685,102463,102631,102590,102714,102788,102759,102509,102487,102724,102579"}
+[UnityCrossThreadLogger]6/16/2026 07:38:28 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102608], \"Pack\": 1, \"Pick\": 2}"}
+[UnityCrossThreadLogger]6/16/2026 07:38:29 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:38:31 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 3, "PackCards": "102685,102463,102631,102590,102714,102788,102759,102509,102487,102724,102579"}
+[UnityCrossThreadLogger]6/16/2026 07:38:49 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102685], \"Pack\": 1, \"Pick\": 3}"}
+[UnityCrossThreadLogger]6/16/2026 07:38:50 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:38:52 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 4, "PackCards": "102463,102631,102590,102714,102788,102759,102509,102487,102724,102579"}
+[UnityCrossThreadLogger]6/16/2026 07:39:24 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102463], \"Pack\": 1, \"Pick\": 4}"}
+[UnityCrossThreadLogger]6/16/2026 07:39:25 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:39:27 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 5, "PackCards": "102631,102590,102714,102788,102759,102509,102487,102724,102579"}
+[UnityCrossThreadLogger]6/16/2026 07:39:41 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102631], \"Pack\": 1, \"Pick\": 5}"}
+[UnityCrossThreadLogger]6/16/2026 07:39:42 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:39:44 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 6, "PackCards": "102590,102714,102788,102759,102509,102487,102724,102579"}
+[UnityCrossThreadLogger]6/16/2026 07:40:09 PM
+==> EventPlayerDraftMakePick
+{"id": "aaaabbbb-cccc-dddd-eeee-ffffffffffff", "request": "{\"DraftId\": \"fake-draft-abc123\", \"GrpIds\": [102590], \"Pack\": 1, \"Pick\": 6}"}
+[UnityCrossThreadLogger]6/16/2026 07:40:10 PM
+<== EventPlayerDraftMakePick(aaaabbbb-cccc-dddd-eeee-ffffffffffff)
+{"IsPickSuccessful":true}
+[UnityCrossThreadLogger]6/16/2026 07:40:12 PM
+Draft.Notify
+{"draftId": "fake-draft-abc123", "SelfPack": 1, "SelfPick": 7, "PackCards": "102714,102788,102759,102509,102487,102724,102579"}

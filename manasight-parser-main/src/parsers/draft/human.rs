@@ -1,0 +1,868 @@
+//! Human draft parser for Premier Draft and Traditional Draft events.
+//!
+//! In human (pod) drafts, the player drafts against other human players.
+//! Two log signatures capture the draft flow:
+//!
+//! | Signature | Meaning | Key Fields |
+//! |-----------|---------|------------|
+//! | `Draft.Notify` | Draft state notification (pack presented) | `draftId`, `SelfPack`, `SelfPick`, `PackCards` |
+//! | `EventPlayerDraftMakePick` | Player's pick selection | `DraftId`, `GrpIds`, `Pack`, `Pick` |
+//!
+//! Human drafts have 3 packs of 14 picks each (42 total picks). Pack and
+//! pick numbers are zero-indexed in the log.
+//!
+//! Both events are Class 2 (Durable Per-Event) -- each pick is independently
+//! valuable and must survive crashes.
+
+use crate::events::{DraftHumanEvent, EventMetadata, GameEvent};
+use crate::log::entry::LogEntry;
+use crate::parsers::api_common;
+
+/// Marker for human draft state notification events.
+///
+/// `Draft.Notify` appears in the log when a new pack is presented to the
+/// player during a Premier or Traditional Draft.
+const DRAFT_NOTIFY_MARKER: &str = "Draft.Notify";
+
+/// Marker for human draft pick selection events.
+///
+/// `EventPlayerDraftMakePick` appears after the player selects a card
+/// from the presented pack.
+const MAKE_PICK_MARKER: &str = "EventPlayerDraftMakePick";
+
+/// Attempts to parse a [`LogEntry`] as a human draft event.
+///
+/// Returns `Some(GameEvent::DraftHuman(_))` if the entry matches any of:
+/// - A `Draft.Notify` pack presentation
+/// - An `EventPlayerDraftMakePick` pick selection
+///
+/// Returns `None` if the entry does not match any human draft signature.
+///
+/// The `timestamp` is `None` when the log entry header did not contain a
+/// parseable timestamp. It is passed through to [`EventMetadata`] so
+/// downstream consumers can distinguish real vs missing timestamps.
+pub fn try_parse(
+    entry: &LogEntry,
+    timestamp: Option<chrono::DateTime<chrono::Utc>>,
+) -> Option<GameEvent> {
+    let body = &entry.body;
+
+    // Try Draft.Notify first (pack presentation -- most common during drafting).
+    if let Some(payload) = try_parse_draft_notify(body) {
+        let metadata = EventMetadata::new(timestamp, body.as_bytes().to_vec());
+        return Some(GameEvent::DraftHuman(DraftHumanEvent::new(
+            metadata, payload,
+        )));
+    }
+
+    // Try EventPlayerDraftMakePick (pick selection).
+    if let Some(payload) = try_parse_make_pick(body) {
+        let metadata = EventMetadata::new(timestamp, body.as_bytes().to_vec());
+        return Some(GameEvent::DraftHuman(DraftHumanEvent::new(
+            metadata, payload,
+        )));
+    }
+
+    None
+}
+
+/// Attempts to parse a `Draft.Notify` pack presentation event.
+///
+/// The log entry body contains a JSON object with:
+/// - `draftId`: unique identifier for this draft session
+/// - `SelfPack`: zero-indexed pack number (0, 1, 2)
+/// - `SelfPick`: zero-indexed pick number within the pack
+/// - `PackCards`: comma-separated string of card GRP IDs in the pack
+fn try_parse_draft_notify(body: &str) -> Option<serde_json::Value> {
+    if !body.contains(DRAFT_NOTIFY_MARKER) {
+        return None;
+    }
+
+    let parsed = api_common::parse_json_from_body(body, "Draft.Notify")?;
+
+    // Verify this is a Draft.Notify by checking for characteristic fields.
+    // PackCards is the hallmark of a Draft.Notify payload.
+    if parsed.get("PackCards").is_none() && parsed.get("SelfPack").is_none() {
+        return None;
+    }
+
+    let draft_id = parsed
+        .get("draftId")
+        .and_then(serde_json::Value::as_str)
+        .unwrap_or("");
+
+    let pack_idx = parsed
+        .get("SelfPack")
+        .and_then(serde_json::Value::as_i64)
+        .unwrap_or(0);
+
+    let selection_idx = parsed
+        .get("SelfPick")
+        .and_then(serde_json::Value::as_i64)
+        .unwrap_or(0);
+
+    let pack_cards = extract_pack_cards_from_string(&parsed);
+
+    Some(serde_json::json!({
+        "type": "draft_human_notify",
+        "draft_id": draft_id,
+        "pack_number": pack_idx,
+        "pick_number": selection_idx,
+        "pack_cards": pack_cards,
+        "raw_draft_notify": parsed,
+    }))
+}
+
+/// Attempts to parse an `EventPlayerDraftMakePick` pick selection event.
+///
+/// The log entry body contains a JSON object with:
+/// - `EventName`: the Arena event identifier
+/// - `PickInfo` (optional wrapper) containing:
+///   - `CardId`: the GRP ID of the selected card
+///   - `PackNumber`: zero-indexed pack number
+///   - `PickNumber`: zero-indexed pick number within the pack
+/// - OR an outbound API request format containing:
+///   - `request` string-escaped JSON with `DraftId`, `GrpIds` (array), `Pack`, and `Pick`
+fn try_parse_make_pick(body: &str) -> Option<serde_json::Value> {
+    if !body.contains(MAKE_PICK_MARKER) {
+        return None;
+    }
+
+    // Ignore paired API responses like `<== EventPlayerDraftMakePick(uuid)`.
+    // They only confirm success and do not contain pack, pick or card IDs.
+    if api_common::is_api_response(body, MAKE_PICK_MARKER) {
+        return None;
+    }
+
+    let parsed = api_common::parse_json_from_body(body, "EventPlayerDraftMakePick")?;
+
+    // Try to extract the string-escaped `request` payload if it exists (outbound API request)
+    let request_payload = parsed
+        .get("request")
+        .and_then(serde_json::Value::as_str)
+        .and_then(|s| serde_json::from_str::<serde_json::Value>(s).ok());
+
+    // The pick info may be at top level, nested under a `PickInfo` key, or inside the `request` payload.
+    // We prioritize `PickInfo`, then the parsed `request`, then the top-level `parsed` object.
+    let pick_info = parsed
+        .get("PickInfo")
+        .or(request_payload.as_ref())
+        .unwrap_or(&parsed);
+
+    let card_id = pick_info
+        .get("CardId")
+        .and_then(serde_json::Value::as_i64)
+        .or_else(|| {
+            // Outbound request format has `GrpIds` as an array
+            pick_info
+                .get("GrpIds")
+                .and_then(|v| v.as_array())
+                .and_then(|arr| arr.first())
+                .and_then(serde_json::Value::as_i64)
+        })?;
+
+    let pack_idx = pick_info
+        .get("PackNumber")
+        .or_else(|| pick_info.get("Pack"))
+        .and_then(serde_json::Value::as_i64)
+        .unwrap_or(0);
+
+    let selection_idx = pick_info
+        .get("PickNumber")
+        .or_else(|| pick_info.get("Pick"))
+        .and_then(serde_json::Value::as_i64)
+        .unwrap_or(0);
+
+    let event_name = parsed
+        .get("EventName")
+        .or_else(|| pick_info.get("EventName"))
+        .and_then(serde_json::Value::as_str)
+        .unwrap_or("");
+
+    // Some entries include the full list of card IDs that were in the pack.
+    let card_ids = pick_info
+        .get("CardIds")
+        .and_then(|v| v.as_array())
+        .map(|arr| {
+            arr.iter()
+                .filter_map(serde_json::Value::as_i64)
+                .collect::<Vec<_>>()
+        })
+        .unwrap_or_default();
+
+    let draft_id = pick_info
+        .get("DraftId")
+        .or_else(|| pick_info.get("draftId"))
+        .or_else(|| parsed.get("DraftId"))
+        .or_else(|| parsed.get("draftId"))
+        .and_then(serde_json::Value::as_str)
+        .unwrap_or("");
+
+    Some(serde_json::json!({
+        "type": "draft_human_pick",
+        "draft_id": draft_id,
+        "event_name": event_name,
+        "card_id": card_id,
+        "pack_number": pack_idx,
+        "pick_number": selection_idx,
+        "card_ids": card_ids,
+        "raw_make_pick": parsed,
+    }))
+}
+
+/// Extracts pack card IDs from a `PackCards` field in a `Draft.Notify` payload.
+///
+/// In `Draft.Notify`, `PackCards` is typically a comma-separated string of
+/// GRP IDs (e.g., `"12345,67890,11111"`). This function also handles
+/// array format for robustness.
+fn extract_pack_cards_from_string(parsed: &serde_json::Value) -> Vec<i64> {
+    if let Some(pack_cards) = parsed.get("PackCards") {
+        // Comma-separated string (most common format in Draft.Notify).
+        if let Some(s) = pack_cards.as_str() {
+            return parse_comma_separated_ids(s);
+        }
+
+        // Array format (less common but possible).
+        if let Some(arr) = pack_cards.as_array() {
+            return arr
+                .iter()
+                .filter_map(|v| {
+                    v.as_i64()
+                        .or_else(|| v.as_str().and_then(|s| s.parse::<i64>().ok()))
+                })
+                .collect();
+        }
+    }
+
+    Vec::new()
+}
+
+/// Parses a comma-separated string of integer IDs into a `Vec<i64>`.
+///
+/// Silently skips any non-numeric segments.
+fn parse_comma_separated_ids(s: &str) -> Vec<i64> {
+    s.split(',')
+        .filter_map(|segment| segment.trim().parse::<i64>().ok())
+        .collect()
+}
+
+// ---------------------------------------------------------------------------
+// Tests
+// ---------------------------------------------------------------------------
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::events::PerformanceClass;
+    use crate::parsers::test_helpers::{
+        draft_human_payload, test_timestamp, unity_entry, EntryHeader,
+    };
+
+    // -- Draft.Notify parsing ------------------------------------------------
+
+    mod draft_notify {
+        use super::*;
+
+        #[test]
+        fn test_try_parse_draft_notify_basic() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\n\
+                           \"draftId\": \"abc-123-def\",\n\
+                           \"SelfPack\": 0,\n\
+                           \"SelfPick\": 0,\n\
+                           \"PackCards\": \"12345,67890,11111\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["type"], "draft_human_notify");
+            assert_eq!(payload["draft_id"], "abc-123-def");
+            assert_eq!(payload["pack_number"], 0);
+            assert_eq!(payload["pick_number"], 0);
+            assert_eq!(
+                payload["pack_cards"],
+                serde_json::json!([12345, 67890, 11111])
+            );
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_second_pack() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\n\
+                           \"draftId\": \"draft-456\",\n\
+                           \"SelfPack\": 1,\n\
+                           \"SelfPick\": 5,\n\
+                           \"PackCards\": \"22222,33333,44444,55555\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["pack_number"], 1);
+            assert_eq!(payload["pick_number"], 5);
+            assert_eq!(payload["draft_id"], "draft-456");
+            assert_eq!(
+                payload["pack_cards"],
+                serde_json::json!([22222, 33333, 44444, 55555])
+            );
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_last_pick_single_card() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\n\
+                           \"draftId\": \"draft-789\",\n\
+                           \"SelfPack\": 2,\n\
+                           \"SelfPick\": 13,\n\
+                           \"PackCards\": \"99999\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["pack_number"], 2);
+            assert_eq!(payload["pick_number"], 13);
+            assert_eq!(payload["pack_cards"], serde_json::json!([99999]));
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_empty_pack_cards() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\n\
+                           \"draftId\": \"draft-empty\",\n\
+                           \"SelfPack\": 0,\n\
+                           \"SelfPick\": 0,\n\
+                           \"PackCards\": \"\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["pack_cards"], serde_json::json!([]));
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_array_format_pack_cards() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\n\
+                           \"draftId\": \"draft-arr\",\n\
+                           \"SelfPack\": 0,\n\
+                           \"SelfPick\": 0,\n\
+                           \"PackCards\": [12345, 67890]\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["pack_cards"], serde_json::json!([12345, 67890]));
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_missing_draft_id() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\n\
+                           \"SelfPack\": 0,\n\
+                           \"SelfPick\": 0,\n\
+                           \"PackCards\": \"12345\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["draft_id"], "");
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_preserves_raw_payload() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\n\
+                           \"draftId\": \"draft-raw\",\n\
+                           \"SelfPack\": 0,\n\
+                           \"SelfPick\": 0,\n\
+                           \"PackCards\": \"12345\",\n\
+                           \"ExtraField\": \"preserved\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["raw_draft_notify"]["ExtraField"], "preserved");
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_with_timestamp_in_header() {
+            let body = "[UnityCrossThreadLogger]2/25/2026 12:00:00 PM \
+                         Draft.Notify\n\
+                         {\n\
+                           \"draftId\": \"draft-ts\",\n\
+                           \"SelfPack\": 0,\n\
+                           \"SelfPick\": 0,\n\
+                           \"PackCards\": \"12345\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["type"], "draft_human_notify");
+        }
+    }
+
+    // -- EventPlayerDraftMakePick parsing ------------------------------------
+
+    mod make_pick {
+        use super::*;
+
+        #[test]
+        fn test_try_parse_make_pick_basic() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"EventName\": \"PremierDraft_MKM_20260201\",\n\
+                           \"PickInfo\": {\n\
+                             \"CardId\": 12345,\n\
+                             \"PackNumber\": 0,\n\
+                             \"PickNumber\": 0\n\
+                           }\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["type"], "draft_human_pick");
+            assert_eq!(payload["event_name"], "PremierDraft_MKM_20260201");
+            assert_eq!(payload["card_id"], 12345);
+            assert_eq!(payload["pack_number"], 0);
+            assert_eq!(payload["pick_number"], 0);
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_later_in_draft() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"EventName\": \"TradDraft_DSK_20260115\",\n\
+                           \"PickInfo\": {\n\
+                             \"CardId\": 67890,\n\
+                             \"PackNumber\": 1,\n\
+                             \"PickNumber\": 7\n\
+                           }\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["card_id"], 67890);
+            assert_eq!(payload["pack_number"], 1);
+            assert_eq!(payload["pick_number"], 7);
+            assert_eq!(payload["event_name"], "TradDraft_DSK_20260115");
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_with_card_ids() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"EventName\": \"PremierDraft_MKM_20260201\",\n\
+                           \"PickInfo\": {\n\
+                             \"CardId\": 11111,\n\
+                             \"PackNumber\": 0,\n\
+                             \"PickNumber\": 0,\n\
+                             \"CardIds\": [11111, 22222, 33333]\n\
+                           }\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["card_id"], 11111);
+            assert_eq!(
+                payload["card_ids"],
+                serde_json::json!([11111, 22222, 33333])
+            );
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_flat_format() {
+            // Some log versions put fields at the top level instead of
+            // nesting under PickInfo.
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"CardId\": 55555,\n\
+                           \"PackNumber\": 2,\n\
+                           \"PickNumber\": 10\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["card_id"], 55555);
+            assert_eq!(payload["pack_number"], 2);
+            assert_eq!(payload["pick_number"], 10);
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_missing_card_id_returns_none() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"PickInfo\": {\n\
+                             \"PackNumber\": 0,\n\
+                             \"PickNumber\": 0\n\
+                           }\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_none());
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_preserves_raw_payload() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"PickInfo\": {\n\
+                             \"CardId\": 12345,\n\
+                             \"PackNumber\": 0,\n\
+                             \"PickNumber\": 0,\n\
+                             \"ExtraField\": \"kept\"\n\
+                           }\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["raw_make_pick"]["PickInfo"]["ExtraField"], "kept");
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_outbound_request_format() {
+            let body = "[UnityCrossThreadLogger]==> EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"id\": \"b0114c5d-0462-4855-a7ab-d06ede720f93\",\n\
+                           \"request\": \"{\\\"DraftId\\\":\\\"0784e646\\\",\\\"GrpIds\\\":[100486],\\\"Pack\\\":1,\\\"Pick\\\":2}\"\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["type"], "draft_human_pick");
+            assert_eq!(payload["card_id"], 100_486);
+            assert_eq!(payload["pack_number"], 1);
+            assert_eq!(payload["pick_number"], 2);
+            assert_eq!(payload["draft_id"], "0784e646");
+            assert_eq!(payload["event_name"], ""); // No event name in this format
+            assert_eq!(
+                payload["raw_make_pick"]["id"],
+                "b0114c5d-0462-4855-a7ab-d06ede720f93"
+            );
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_ignores_success_response() {
+            let body = "[UnityCrossThreadLogger]3/11/2026 9:44:16 PM\n\
+                         <== EventPlayerDraftMakePick(b0114c5d-0462-4855-a7ab-d06ede720f93)\n\
+                         {\"IsPickSuccessful\":true}";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_none());
+        }
+
+        #[test]
+        fn test_try_parse_make_pick_with_timestamp_in_header() {
+            let body = "[UnityCrossThreadLogger]2/25/2026 12:00:00 PM \
+                         EventPlayerDraftMakePick\n\
+                         {\n\
+                           \"PickInfo\": {\n\
+                             \"CardId\": 77777,\n\
+                             \"PackNumber\": 0,\n\
+                             \"PickNumber\": 1\n\
+                           }\n\
+                         }";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            let payload = draft_human_payload(event);
+
+            assert_eq!(payload["card_id"], 77777);
+        }
+    }
+
+    // -- Metadata preservation -----------------------------------------------
+
+    mod metadata {
+        use super::*;
+
+        #[test]
+        fn test_try_parse_preserves_raw_bytes_notify() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\"SelfPack\": 0, \"SelfPick\": 0, \
+                          \"PackCards\": \"12345\"}";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            assert_eq!(event.metadata().raw_bytes(), body.as_bytes());
+        }
+
+        #[test]
+        fn test_try_parse_preserves_raw_bytes_make_pick() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\"PickInfo\": {\"CardId\": 1, \"PackNumber\": 0, \
+                          \"PickNumber\": 0}}";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            assert_eq!(event.metadata().raw_bytes(), body.as_bytes());
+        }
+
+        #[test]
+        fn test_try_parse_stores_timestamp_notify() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\"SelfPack\": 0, \"SelfPick\": 0, \
+                          \"PackCards\": \"12345\"}";
+            let entry = unity_entry(body);
+            let ts = Some(test_timestamp());
+            let result = try_parse(&entry, ts);
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            assert_eq!(event.metadata().timestamp(), ts);
+        }
+
+        #[test]
+        fn test_try_parse_stores_timestamp_make_pick() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\"PickInfo\": {\"CardId\": 1, \"PackNumber\": 0, \
+                          \"PickNumber\": 0}}";
+            let entry = unity_entry(body);
+            let ts = Some(test_timestamp());
+            let result = try_parse(&entry, ts);
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            assert_eq!(event.metadata().timestamp(), ts);
+        }
+    }
+
+    // -- Non-matching entries (should return None) ----------------------------
+
+    mod non_matching {
+        use super::*;
+
+        #[test]
+        fn test_try_parse_unrelated_entry_returns_none() {
+            let body = "[UnityCrossThreadLogger]greToClientEvent\n{\"data\": 1}";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_empty_body_returns_none() {
+            let body = "[UnityCrossThreadLogger]";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_bot_draft_entry_returns_none() {
+            // Bot draft entries should not be parsed by the human draft parser.
+            let body = "[UnityCrossThreadLogger]BotDraft_DraftPick\n\
+                         {\n\
+                           \"PickInfo\": {\n\
+                             \"CardId\": 12345,\n\
+                             \"PackNumber\": 0,\n\
+                             \"PickNumber\": 0\n\
+                           }\n\
+                         }";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_game_result_business_event_returns_none() {
+            // Game result LogBusinessEvents (with WinningType) should not
+            // match the human draft parser.
+            let body = "[UnityCrossThreadLogger]LogBusinessEvents\n\
+                         {\n\
+                           \"WinningType\": \"WinLoss\",\n\
+                           \"WinningTeamId\": 1\n\
+                         }";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_malformed_json_notify_returns_none() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\"PackCards\": broken!!!}";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_malformed_json_make_pick_returns_none() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {not valid json}";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_malformed_json_business_event_returns_none() {
+            let body = "[UnityCrossThreadLogger]LogBusinessEvents\n\
+                         {\"PickGrpId\": broken!!!}";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_marker_only_no_json_notify_returns_none() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_marker_only_no_json_make_pick_returns_none() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_draft_notify_no_pack_or_self_pack_returns_none() {
+            // Draft.Notify marker in text but JSON has no characteristic fields.
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\"unrelatedField\": \"value\"}";
+            let entry = unity_entry(body);
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+
+        #[test]
+        fn test_try_parse_connection_manager_header_returns_none() {
+            let entry = LogEntry {
+                header: EntryHeader::ConnectionManager,
+                body: "[ConnectionManager]some connection message".to_owned(),
+            };
+            assert!(try_parse(&entry, Some(test_timestamp())).is_none());
+        }
+    }
+
+    // -- Performance class ---------------------------------------------------
+
+    mod performance_class {
+        use super::*;
+
+        #[test]
+        fn test_draft_human_notify_is_durable_per_event() {
+            let body = "[UnityCrossThreadLogger]Draft.Notify\n\
+                         {\"SelfPack\": 0, \"SelfPick\": 0, \
+                          \"PackCards\": \"12345\"}";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            assert_eq!(event.performance_class(), PerformanceClass::DurablePerEvent);
+        }
+
+        #[test]
+        fn test_draft_human_pick_is_durable_per_event() {
+            let body = "[UnityCrossThreadLogger]EventPlayerDraftMakePick\n\
+                         {\"PickInfo\": {\"CardId\": 1, \"PackNumber\": 0, \
+                          \"PickNumber\": 0}}";
+            let entry = unity_entry(body);
+            let result = try_parse(&entry, Some(test_timestamp()));
+
+            assert!(result.is_some());
+            let event = result.as_ref().unwrap_or_else(|| unreachable!());
+            assert_eq!(event.performance_class(), PerformanceClass::DurablePerEvent);
+        }
+    }
+
+    // -- Internal helpers ----------------------------------------------------
+
+    mod helpers {
+        use super::*;
+
+        #[test]
+        fn test_parse_comma_separated_ids_basic() {
+            assert_eq!(
+                parse_comma_separated_ids("12345,67890,11111"),
+                vec![12345, 67890, 11111]
+            );
+        }
+
+        #[test]
+        fn test_parse_comma_separated_ids_with_spaces() {
+            assert_eq!(
+                parse_comma_separated_ids("12345, 67890, 11111"),
+                vec![12345, 67890, 11111]
+            );
+        }
+
+        #[test]
+        fn test_parse_comma_separated_ids_single() {
+            assert_eq!(parse_comma_separated_ids("12345"), vec![12345]);
+        }
+
+        #[test]
+        fn test_parse_comma_separated_ids_empty() {
+            let result: Vec<i64> = parse_comma_separated_ids("");
+            assert!(result.is_empty());
+        }
+
+        #[test]
+        fn test_parse_comma_separated_ids_with_invalid() {
+            assert_eq!(
+                parse_comma_separated_ids("12345,abc,67890"),
+                vec![12345, 67890]
+            );
+        }
+    }
+}

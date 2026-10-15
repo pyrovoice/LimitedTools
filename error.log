@@ -1,0 +1,144 @@
+
+============================================================
+2026-06-18 20:18:12.414854
+Traceback (most recent call last):
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2227, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2211, in main
+    App(csv_path, log_path).mainloop()
+    ~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2173, in __init__
+    advisor = DraftAdvisorFrame(nb, csv_path, log_path)
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1516, in __init__
+    self._poll()
+    ~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1812, in _poll
+    self._refresh()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1870, in _refresh
+    (card_score(self._lookup(aid), depth, total_picks, crea, other,
+     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                self._density_threshold, picked_names,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                openness_fn=openness_fn, pair_synergy=pair_synergy,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                picks=s.picks, lookup_fn=self._lookup),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1207, in card_score
+    openness = openness_fn(wubrg_colors[0])
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2152, in fn
+    return self._color_openness_score(c, depth)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2104, in _color_openness_score
+    if self._lane_cnt.get(k, 0.0) > 0]
+       ^^^^^^^^^^^^^^
+AttributeError: 'DraftAdvisorFrame' object has no attribute '_lane_cnt'. Did you mean: '_dns_cnt'?
+
+============================================================
+2026-06-18 20:18:12.473310
+Traceback (most recent call last):
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2227, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2211, in main
+    App(csv_path, log_path).mainloop()
+    ~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2173, in __init__
+    advisor = DraftAdvisorFrame(nb, csv_path, log_path)
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1516, in __init__
+    self._poll()
+    ~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1812, in _poll
+    self._refresh()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1870, in _refresh
+    (card_score(self._lookup(aid), depth, total_picks, crea, other,
+     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                self._density_threshold, picked_names,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                openness_fn=openness_fn, pair_synergy=pair_synergy,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                picks=s.picks, lookup_fn=self._lookup),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1207, in card_score
+    openness = openness_fn(wubrg_colors[0])
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2152, in fn
+    return self._color_openness_score(c, depth)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2104, in _color_openness_score
+    if self._lane_cnt.get(k, 0.0) > 0]
+       ^^^^^^^^^^^^^^
+AttributeError: 'DraftAdvisorFrame' object has no attribute '_lane_cnt'. Did you mean: '_dns_cnt'?
+
+============================================================
+2026-06-18 20:18:17.451719
+Traceback (most recent call last):
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2227, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2211, in main
+    App(csv_path, log_path).mainloop()
+    ~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2173, in __init__
+    advisor = DraftAdvisorFrame(nb, csv_path, log_path)
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1516, in __init__
+    self._poll()
+    ~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1812, in _poll
+    self._refresh()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1870, in _refresh
+    (card_score(self._lookup(aid), depth, total_picks, crea, other,
+     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                self._density_threshold, picked_names,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                openness_fn=openness_fn, pair_synergy=pair_synergy,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                picks=s.picks, lookup_fn=self._lookup),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1207, in card_score
+    openness = openness_fn(wubrg_colors[0])
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2152, in fn
+    return self._color_openness_score(c, depth)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2104, in _color_openness_score
+    if self._lane_cnt.get(k, 0.0) > 0]
+       ^^^^^^^^^^^^^^
+AttributeError: 'DraftAdvisorFrame' object has no attribute '_lane_cnt'. Did you mean: '_dns_cnt'?
+
+============================================================
+2026-06-18 20:18:17.466745
+Traceback (most recent call last):
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2227, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2211, in main
+    App(csv_path, log_path).mainloop()
+    ~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2173, in __init__
+    advisor = DraftAdvisorFrame(nb, csv_path, log_path)
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1516, in __init__
+    self._poll()
+    ~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1812, in _poll
+    self._refresh()
+    ~~~~~~~~~~~~~^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1870, in _refresh
+    (card_score(self._lookup(aid), depth, total_picks, crea, other,
+     ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                self._density_threshold, picked_names,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                openness_fn=openness_fn, pair_synergy=pair_synergy,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                picks=s.picks, lookup_fn=self._lookup),
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 1207, in card_score
+    openness = openness_fn(wubrg_colors[0])
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2152, in fn
+    return self._color_openness_score(c, depth)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\maxim\My Stuff\LimitedTool\limitedtool.py", line 2104, in _color_openness_score
+    if self._lane_cnt.get(k, 0.0) > 0]
+       ^^^^^^^^^^^^^^
+AttributeError: 'DraftAdvisorFrame' object has no attribute '_lane_cnt'. Did you mean: '_dns_cnt'?

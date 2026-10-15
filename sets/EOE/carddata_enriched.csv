@@ -1,0 +1,317 @@
+Name,Type,CMC,Color,Rarity,ALSA,ATA,OH WR,GIH WR,ALSA Pro,ATA Pro,OH WR Pro,GIH WR Pro,Best1,Best2,Best3,Best4,ArenaId
+Anticausal Vestige,Creature — Eldrazi,6,,R,1.16,,62.1%,61.5%,,,,,WG:GIH=62.0%:OH=61.2%,BR:GIH=61.8%:OH=62.2%,UB:GIH=61.0%:OH=58.5%,UR:GIH=60.4%:OH=65.3%,96575
+"Tezzeret, Cruel Captain",Legendary Planeswalker — Tezzeret,3,,M,1.49,,,52.7%,,,,,WB:GIH=58.3%:OH=59.1%,WU:GIH=58.3%:OH=58.0%,UB:GIH=54.8%:OH=53.4%,UG:GIH=54.0%:OH=50.7%,96576
+All-Fates Stalker,Creature — Drix Assassin,4,W,U,2.62,,57.6%,60.5%,,,,,UB:GIH=64.2%:OH=67.1%,RG:GIH=63.4%:OH=62.5%,WB:GIH=61.2%:OH=59.8%,WG:GIH=60.3%:OH=57.9%,96577
+Astelli Reclaimer,Creature — Angel Warrior,5,W,R,1.92,,55.5%,57.7%,,,,,WU:GIH=58.7%:OH=55.4%,MULTI:GIH=57.1%:OH=55.7%,WB:GIH=56.9%:OH=52.3%,WG:GIH=55.9%:OH=50.1%,96578
+Auxiliary Boosters,Artifact — Equipment,5,W,C,5.98,,51.9%,55.4%,,,,,WG:GIH=56.0%:OH=54.9%,WB:GIH=56.0%:OH=53.5%,WU:GIH=54.9%:OH=51.7%,WR:GIH=53.9%:OH=52.5%,96579
+Banishing Light,Enchantment,3,W,C,3.07,,56.4%,59.1%,,,,,UG:GIH=60.4%:OH=57.6%,WU:GIH=59.0%:OH=55.8%,WB:GIH=59.0%:OH=56.9%,BR:GIH=58.7%:OH=45.7%,96580
+Beyond the Quiet,Sorcery,5,W,R,2.19,,58.7%,61.2%,,,,,UG:GIH=63.1%:OH=57.7%,WU:GIH=61.3%:OH=59.6%,WG:GIH=59.4%:OH=57.7%,WB:GIH=58.5%:OH=56.8%,96581
+Brightspear Zealot,Creature — Human Soldier,3,W,C,6.98,,53.8%,53.6%,,,,,WU:GIH=55.5%:OH=55.7%,WR:GIH=53.5%:OH=56.2%,WB:GIH=53.3%:OH=53.0%,WG:GIH=52.2%:OH=51.8%,96582
+Cosmogrand Zenith,Creature — Human Soldier,3,W,M,1.29,,65.0%,63.8%,,,,,WU:GIH=66.6%:OH=68.7%,BG:GIH=66.4%:OH=67.3%,WB:GIH=64.5%:OH=64.2%,WG:GIH=63.3%:OH=63.8%,96583
+Dawnstrike Vanguard,Creature — Human Knight,6,W,U,4.20,,49.4%,52.8%,,,,,WU:GIH=54.6%:OH=52.2%,WG:GIH=53.6%:OH=51.2%,WR:GIH=51.8%:OH=49.7%,WB:GIH=51.2%:OH=48.9%,96584
+Dockworker Drone,Artifact Creature — Robot,2,W,C,4.97,,54.2%,55.2%,,,,,WG:GIH=55.5%:OH=55.2%,WU:GIH=55.2%:OH=54.9%,WB:GIH=54.6%:OH=54.8%,WR:GIH=53.0%:OH=53.0%,96585
+Dual-Sun Adepts,Creature — Human Soldier,3,W,U,3.56,,58.9%,58.3%,,,,,WU:GIH=58.1%:OH=57.4%,WB:GIH=57.0%:OH=55.2%,WG:GIH=56.5%:OH=56.8%,WR:GIH=56.0%:OH=56.5%,96586
+Dual-Sun Technique,Instant,2,W,U,5.73,,48.7%,51.6%,,,,,WG:GIH=54.7%:OH=50.3%,WB:GIH=51.3%:OH=49.1%,WU:GIH=48.9%:OH=44.4%,WR:GIH=47.2%:OH=44.1%,96587
+Emergency Eject,Instant,3,W,U,4.01,,50.4%,55.4%,,,,,WG:GIH=55.0%:OH=53.1%,WR:GIH=54.4%:OH=50.5%,WU:GIH=54.1%:OH=51.3%,WB:GIH=52.3%:OH=49.7%,96588
+Exalted Sunborn,Creature — Angel Wizard,5,W,M,1.53,,,59.7%,,,,,WG:GIH=62.4%:OH=60.7%,WU:GIH=58.5%:OH=56.7%,WB:GIH=56.3%:OH=53.6%,WR:GIH=55.3%:OH=56.2%,96589
+Exosuit Savior,Creature — Human Soldier,3,W,C,6.10,,51.1%,53.7%,,,,,WU:GIH=54.8%:OH=52.1%,WB:GIH=53.3%:OH=51.1%,WG:GIH=52.1%:OH=50.1%,MULTI:GIH=50.3%:OH=42.7%,96590
+Flight-Deck Coordinator,Creature — Human Soldier,3,W,C,6.69,,55.9%,56.4%,,,,,WU:GIH=56.0%:OH=55.2%,WB:GIH=55.0%:OH=56.5%,WG:GIH=54.5%:OH=53.1%,WR:GIH=53.8%:OH=54.3%,96591
+Focus Fire,Instant,1,W,C,4.65,,56.5%,57.6%,,,,,RG:GIH=63.0%:OH=62.3%,UG:GIH=58.0%:OH=58.3%,WG:GIH=57.8%:OH=55.9%,WB:GIH=57.5%:OH=55.7%,96592
+"Haliya, Guided by Light",Legendary Creature — Human Soldier,3,W,R,1.84,,60.4%,61.8%,,,,,WB:GIH=61.6%:OH=60.9%,UG:GIH=61.5%:OH=72.5%,WG:GIH=60.0%:OH=61.5%,WU:GIH=59.7%:OH=60.9%,96593
+Hardlight Containment,Enchantment — Aura,1,W,R,3.62,,,55.9%,,,,,WU:GIH=54.2%:OH=49.8%,WG:GIH=53.3%:OH=53.5%,MULTI:GIH=53.2%:OH=42.0%,WR:GIH=51.6%:OH=49.5%,96594
+Honor,Sorcery,1,W,U,4.42,,56.5%,57.1%,,,,,WG:GIH=57.3%:OH=56.4%,WU:GIH=56.8%:OH=55.7%,WB:GIH=56.3%:OH=55.1%,WR:GIH=53.6%:OH=52.3%,96595
+Honored Knight-Captain,Creature — Human Advisor Knight,2,W,U,3.92,,56.2%,56.6%,,,,,WB:GIH=58.3%:OH=58.9%,WG:GIH=56.3%:OH=56.1%,WU:GIH=56.1%:OH=56.6%,WR:GIH=54.5%:OH=55.5%,96596
+Knight Luminary,Creature — Human Knight,4,W,C,4.47,,58.5%,58.3%,,,,,WB:GIH=59.6%:OH=60.0%,WU:GIH=58.3%:OH=57.8%,WG:GIH=57.3%:OH=57.0%,WR:GIH=55.6%:OH=55.5%,96597
+Lightstall Inquisitor,Creature — Angel Wizard,1,W,R,2.98,,61.3%,59.6%,,,,,WB:GIH=58.7%:OH=64.1%,WU:GIH=58.5%:OH=62.1%,WG:GIH=57.4%:OH=60.9%,WR:GIH=56.8%:OH=60.9%,96598
+Lumen-Class Frigate,Artifact — Spacecraft,2,W,R,1.61,,62.2%,60.8%,,,,,WG:GIH=62.9%:OH=66.3%,WU:GIH=61.9%:OH=62.8%,RG:GIH=61.2%:OH=63.8%,WR:GIH=60.3%:OH=61.0%,96599
+Luxknight Breacher,Creature — Human Knight,4,W,C,6.55,,49.7%,52.1%,,,,,WB:GIH=52.6%:OH=53.1%,WG:GIH=52.0%:OH=48.9%,WU:GIH=51.9%:OH=48.7%,WR:GIH=50.6%:OH=50.2%,96600
+Pinnacle Starcage,Artifact,3,W,R,4.28,,,,,,,,WU:GIH=50.2%:OH=46.5%,WG:GIH=48.8%:OH=45.2%,WB:GIH=48.3%:OH=46.3%,WR:GIH=42.6%:OH=45.3%,96601
+Pulsar Squadron Ace,Creature — Human Pilot,2,W,U,3.94,,58.0%,56.9%,,,,,WU:GIH=56.6%:OH=56.6%,WG:GIH=55.9%:OH=55.6%,WR:GIH=55.4%:OH=55.5%,WB:GIH=55.4%:OH=54.6%,96602
+Radiant Strike,Instant,4,W,C,5.07,,54.5%,56.9%,,,,,WU:GIH=56.9%:OH=53.9%,UG:GIH=56.7%:OH=55.6%,RG:GIH=56.6%:OH=54.7%,WG:GIH=56.0%:OH=52.7%,96603
+Rayblade Trooper,Creature — Human Soldier,3,W,U,2.93,,59.1%,59.9%,,,,,WB:GIH=59.8%:OH=59.6%,WG:GIH=59.7%:OH=59.9%,WU:GIH=59.0%:OH=59.8%,WR:GIH=57.2%:OH=58.0%,96604
+Reroute Systems,Instant,1,W,U,4.97,,53.9%,54.4%,,,,,WB:GIH=53.1%:OH=51.7%,WG:GIH=52.9%:OH=51.7%,WU:GIH=52.6%:OH=50.1%,WR:GIH=51.2%:OH=49.8%,96605
+Rescue Skiff,Artifact — Spacecraft,6,W,U,4.42,,50.0%,54.2%,,,,,RG:GIH=56.6%:OH=42.3%,UG:GIH=56.0%:OH=55.0%,WB:GIH=54.0%:OH=50.0%,WG:GIH=53.2%:OH=48.8%,96606
+Scout for Survivors,Sorcery,3,W,U,5.57,,51.4%,53.8%,,,,,WU:GIH=53.9%:OH=46.3%,WB:GIH=51.6%:OH=47.7%,WG:GIH=51.0%:OH=45.9%,WR:GIH=47.4%:OH=42.8%,96607
+Seam Rip,Enchantment,1,W,U,4.89,,54.6%,55.5%,,,,,WU:GIH=56.0%:OH=56.1%,WG:GIH=55.5%:OH=56.3%,WB:GIH=53.6%:OH=51.7%,WR:GIH=51.4%:OH=50.2%,96608
+The Seriema,Legendary Artifact — Spacecraft,3,W,R,2.64,,61.0%,58.8%,,,,,WG:GIH=61.9%:OH=64.0%,WB:GIH=61.7%:OH=63.0%,WR:GIH=60.0%:OH=60.1%,WU:GIH=55.2%:OH=57.7%,96609
+Squire's Lightblade,Artifact — Equipment,1,W,C,7.46,,53.6%,53.5%,,,,,WU:GIH=55.0%:OH=50.8%,WB:GIH=54.5%:OH=51.8%,WG:GIH=53.2%:OH=55.5%,WR:GIH=51.9%:OH=52.3%,96610
+Starfield Shepherd,Creature — Angel,5,W,U,2.74,,58.2%,58.7%,,,,,WU:GIH=59.8%:OH=59.2%,WG:GIH=59.3%:OH=58.9%,WB:GIH=58.7%:OH=58.2%,WR:GIH=57.3%:OH=55.9%,96611
+Starfighter Pilot,Creature — Human Pilot,2,W,C,5.65,,56.8%,55.5%,,,,,WU:GIH=54.6%:OH=54.3%,WB:GIH=54.4%:OH=56.7%,WG:GIH=54.4%:OH=56.0%,WR:GIH=52.7%:OH=53.6%,96612
+Starport Security,Artifact Creature — Robot Soldier,1,W,C,6.49,,54.1%,54.4%,,,,,WU:GIH=54.1%:OH=53.3%,WB:GIH=53.7%:OH=55.6%,WG:GIH=53.6%:OH=53.7%,WR:GIH=52.9%:OH=55.0%,96613
+Sunstar Chaplain,Creature — Human Cleric,2,W,R,1.85,,63.1%,60.5%,,,,,WU:GIH=62.3%:OH=60.6%,WG:GIH=61.9%:OH=61.5%,WB:GIH=60.8%:OH=62.9%,WR:GIH=59.0%:OH=60.5%,96614
+Sunstar Expansionist,Creature — Human Knight,2,W,U,3.12,,59.1%,58.2%,,,,,WG:GIH=58.6%:OH=59.7%,WU:GIH=58.5%:OH=58.4%,WB:GIH=58.1%:OH=58.9%,WR:GIH=56.7%:OH=58.6%,96615
+Sunstar Lightsmith,Creature — Human Artificer,4,W,U,3.33,,57.2%,56.8%,,,,,WU:GIH=57.7%:OH=57.6%,WG:GIH=57.2%:OH=56.0%,WB:GIH=57.0%:OH=55.6%,MULTI:GIH=54.9%:OH=53.0%,96616
+Wedgelight Rammer,Artifact — Spacecraft,4,W,U,4.20,,52.8%,53.2%,,,,,WB:GIH=55.3%:OH=53.4%,WG:GIH=55.1%:OH=55.5%,WR:GIH=54.8%:OH=53.6%,WU:GIH=54.7%:OH=53.3%,96617
+Weftblade Enhancer,Creature — Drix Artificer,6,W,C,5.60,,52.3%,55.3%,,,,,WU:GIH=55.1%:OH=54.2%,WB:GIH=54.3%:OH=51.8%,WG:GIH=54.1%:OH=51.6%,WR:GIH=52.3%:OH=50.0%,96618
+Zealous Display,Instant,3,W,C,7.85,,52.3%,52.7%,,,,,WU:GIH=53.1%:OH=49.3%,WB:GIH=51.0%:OH=46.9%,WG:GIH=50.3%:OH=45.6%,WR:GIH=47.9%:OH=45.9%,96619
+Annul,Instant,1,U,U,6.20,,50.3%,52.2%,,,,,UB:GIH=52.4%:OH=50.1%,UG:GIH=51.8%:OH=48.2%,WU:GIH=51.4%:OH=46.9%,UR:GIH=51.1%:OH=50.1%,96620
+Atomic Microsizer,Artifact — Equipment,1,U,U,7.17,,,51.5%,,,,,WU:GIH=52.0%:OH=51.0%,UR:GIH=51.3%:OH=46.1%,UG:GIH=49.5%:OH=48.5%,UB:GIH=47.9%:OH=44.8%,96621
+Cerebral Download,Instant,5,U,U,4.81,,51.4%,56.5%,,,,,WG:GIH=57.5%:OH=46.2%,BG:GIH=57.5%:OH=44.4%,UG:GIH=56.7%:OH=53.5%,UB:GIH=55.9%:OH=51.5%,96622
+Cloudsculpt Technician,Creature — Jellyfish Artificer,3,U,C,7.04,,50.7%,53.0%,,,,,UB:GIH=53.9%:OH=52.3%,WU:GIH=53.0%:OH=52.8%,UG:GIH=52.7%:OH=49.2%,UR:GIH=50.2%:OH=48.6%,96623
+Codecracker Hound,Creature — Dog,3,U,U,2.82,,59.5%,60.5%,,,,,BG:GIH=62.0%:OH=65.4%,UB:GIH=61.4%:OH=58.9%,WU:GIH=61.3%:OH=60.7%,UG:GIH=61.0%:OH=59.8%,96624
+Consult the Star Charts,Instant,2,U,R,2.32,,53.5%,57.8%,,,,,UG:GIH=59.3%:OH=58.1%,UB:GIH=58.5%:OH=55.1%,WU:GIH=57.7%:OH=53.6%,MULTI:GIH=55.5%:OH=52.4%,96625
+Cryogen Relic,Artifact,2,U,C,3.65,,59.3%,60.0%,,,,,WB:GIH=62.3%:OH=62.3%,UB:GIH=61.2%:OH=59.9%,UG:GIH=60.7%:OH=60.3%,WU:GIH=59.7%:OH=58.8%,96626
+Cryoshatter,Enchantment — Aura,1,U,C,4.63,,53.5%,56.6%,,,,,UB:GIH=57.1%:OH=53.7%,WU:GIH=57.1%:OH=54.5%,UG:GIH=57.0%:OH=54.6%,UR:GIH=55.2%:OH=52.6%,96627
+Desculpting Blast,Instant,2,U,U,3.86,,55.3%,58.5%,,,,,UB:GIH=59.1%:OH=54.4%,UG:GIH=58.6%:OH=55.5%,WU:GIH=56.8%:OH=54.2%,MULTI:GIH=56.4%:OH=50.8%,96628
+Divert Disaster,Instant,2,U,C,6.30,,56.8%,57.6%,,,,,UG:GIH=59.4%:OH=59.9%,UB:GIH=57.7%:OH=56.7%,WU:GIH=55.5%:OH=55.2%,UR:GIH=55.3%:OH=53.1%,96629
+Emissary Escort,Artifact Creature — Robot Soldier,2,U,R,2.65,,56.7%,57.7%,,,,,UG:GIH=59.7%:OH=57.2%,UB:GIH=57.9%:OH=56.6%,WU:GIH=56.6%:OH=56.5%,UR:GIH=56.3%:OH=56.8%,96630
+Gigastorm Titan,Creature — Elemental,5,U,U,3.57,,55.4%,57.8%,,,,,WU:GIH=58.8%:OH=58.0%,UB:GIH=58.5%:OH=57.7%,UG:GIH=56.8%:OH=56.4%,UR:GIH=55.8%:OH=56.1%,96631
+Illvoi Galeblade,Creature — Jellyfish Warrior,1,U,C,6.36,,55.3%,56.2%,,,,,WU:GIH=56.7%:OH=56.4%,UG:GIH=55.2%:OH=54.0%,UB:GIH=54.4%:OH=52.7%,MULTI:GIH=52.4%:OH=50.7%,96632
+Illvoi Infiltrator,Creature — Jellyfish Rogue,3,U,U,3.89,,55.4%,55.4%,,,,,WU:GIH=56.9%:OH=57.6%,UB:GIH=56.1%:OH=56.6%,UG:GIH=54.3%:OH=54.8%,UR:GIH=52.9%:OH=52.0%,96633
+Illvoi Light Jammer,Artifact — Equipment,2,U,C,7.01,,55.1%,57.5%,,,,,UG:GIH=57.7%:OH=56.9%,WU:GIH=56.1%:OH=53.9%,UB:GIH=55.2%:OH=52.5%,UR:GIH=54.9%:OH=53.6%,96634
+Illvoi Operative,Creature — Jellyfish Rogue,2,U,C,6.31,,53.5%,54.5%,,,,,WU:GIH=55.3%:OH=55.9%,UB:GIH=54.3%:OH=53.0%,UG:GIH=54.2%:OH=53.5%,UR:GIH=51.9%:OH=50.0%,96635
+Lost in Space,Instant,4,U,C,6.34,,53.1%,57.1%,,,,,UG:GIH=58.2%:OH=54.4%,WU:GIH=57.2%:OH=54.0%,UB:GIH=57.0%:OH=52.6%,UR:GIH=54.2%:OH=51.0%,96636
+Mechan Assembler,Artifact Creature — Robot Artificer,5,U,U,3.44,,51.4%,53.4%,,,,,UB:GIH=56.5%:OH=52.8%,UG:GIH=55.3%:OH=52.1%,UR:GIH=53.9%:OH=51.9%,WU:GIH=51.9%:OH=51.2%,96637
+Mechan Navigator,Artifact Creature — Robot Pilot,2,U,U,4.29,,56.0%,56.5%,,,,,UB:GIH=57.5%:OH=56.6%,UG:GIH=56.2%:OH=55.9%,WU:GIH=56.1%:OH=56.8%,UR:GIH=54.6%:OH=55.8%,96638
+Mechan Shieldmate,Artifact Creature — Robot Soldier,2,U,C,6.78,,52.1%,53.5%,,,,,UB:GIH=54.8%:OH=53.3%,UR:GIH=53.4%:OH=53.0%,UG:GIH=52.6%:OH=52.4%,WU:GIH=51.1%:OH=49.2%,96639
+Mechanozoa,Artifact Creature — Robot Jellyfish,6,U,C,5.32,,51.8%,55.9%,,,,,UG:GIH=56.9%:OH=53.5%,UB:GIH=56.2%:OH=50.1%,WU:GIH=55.6%:OH=50.8%,UR:GIH=54.8%:OH=51.2%,96640
+Mental Modulation,Instant,2,U,C,6.85,,52.0%,55.3%,,,,,WU:GIH=55.5%:OH=53.0%,UG:GIH=54.0%:OH=50.5%,MULTI:GIH=53.2%:OH=47.8%,UB:GIH=52.5%:OH=46.3%,96641
+"Mm'menon, the Right Hand",Legendary Creature — Jellyfish Advisor,5,U,R,2.76,,50.2%,53.9%,,,,,UB:GIH=51.8%:OH=46.5%,UR:GIH=51.1%:OH=47.8%,WU:GIH=50.5%:OH=44.3%,UG:GIH=50.1%:OH=47.3%,96642
+Moonlit Meditation,Enchantment — Aura,3,U,R,5.17,,,,,,,,MULTI:GIH=43.8%:OH=43.4%,WU:GIH=40.7%:OH=32.4%,UR:GIH=38.1%:OH=38.9%,UG:GIH=38.0%:OH=37.7%,96643
+Mouth of the Storm,Creature — Elemental,7,U,U,3.86,,55.8%,59.2%,,,,,UG:GIH=60.8%:OH=57.3%,RG:GIH=60.7%:OH=58.6%,BR:GIH=58.6%:OH=54.7%,UB:GIH=58.4%:OH=52.8%,96644
+Nanoform Sentinel,Artifact Creature — Robot,3,U,C,6.82,,53.4%,55.2%,,,,,UB:GIH=55.2%:OH=52.8%,UR:GIH=54.8%:OH=52.6%,UG:GIH=54.4%:OH=52.0%,WU:GIH=54.0%:OH=53.4%,96645
+Quantum Riddler,Creature — Sphinx,5,U,M,1.43,,65.8%,64.9%,,,,,UB:GIH=68.9%:OH=64.7%,UG:GIH=68.3%:OH=69.3%,WU:GIH=65.7%:OH=62.2%,MULTI:GIH=65.4%:OH=60.3%,96646
+Scour for Scrap,Instant,4,U,U,6.16,,50.9%,56.1%,,,,,UB:GIH=58.1%:OH=54.3%,UG:GIH=53.2%:OH=46.4%,UR:GIH=52.7%:OH=49.6%,WU:GIH=52.6%:OH=48.7%,96647
+Selfcraft Mechan,Artifact Creature — Robot Artificer,4,U,C,5.10,,55.4%,57.2%,,,,,UG:GIH=58.7%:OH=57.2%,UB:GIH=58.2%:OH=55.8%,UR:GIH=56.7%:OH=55.7%,RG:GIH=56.6%:OH=61.4%,96648
+Sinister Cryologist,Creature — Jellyfish Wizard,3,U,C,8.03,,,52.9%,,,,,MULTI:GIH=53.0%:OH=56.1%,WU:GIH=49.5%:OH=48.9%,UG:GIH=48.5%:OH=43.5%,UB:GIH=44.5%:OH=36.4%,96649
+Specimen Freighter,Artifact — Spacecraft,6,U,U,3.70,,52.9%,57.2%,,,,,WG:GIH=61.6%:OH=56.7%,RG:GIH=59.7%:OH=59.2%,UG:GIH=58.6%:OH=54.6%,UR:GIH=56.4%:OH=52.7%,96650
+Starbreach Whale,Creature — Whale,5,U,C,5.90,,51.1%,55.1%,,,,,UG:GIH=55.3%:OH=53.2%,UB:GIH=54.7%:OH=49.6%,WU:GIH=53.1%:OH=51.0%,UR:GIH=51.0%:OH=50.4%,96651
+Starfield Vocalist,Creature — Human Bard,4,U,R,2.35,,53.4%,56.2%,,,,,UB:GIH=55.8%:OH=51.7%,WU:GIH=55.8%:OH=52.6%,BG:GIH=55.3%:OH=53.5%,RG:GIH=54.5%:OH=50.5%,96652
+Starwinder,Creature — Leviathan,7,U,R,2.10,,54.5%,57.5%,,,,,UG:GIH=58.7%:OH=56.4%,UB:GIH=58.2%:OH=53.0%,MULTI:GIH=56.5%:OH=49.4%,WU:GIH=56.3%:OH=53.0%,96653
+Steelswarm Operator,Artifact Creature — Robot Soldier,2,U,U,4.74,,52.3%,53.3%,,,,,UB:GIH=53.9%:OH=53.7%,UG:GIH=53.9%:OH=54.8%,UR:GIH=52.8%:OH=51.1%,WU:GIH=51.8%:OH=50.6%,96654
+Synthesizer Labship,Artifact — Spacecraft,1,U,R,2.19,,64.1%,61.6%,,,,,WU:GIH=61.7%:OH=64.9%,UR:GIH=61.2%:OH=64.7%,UB:GIH=60.0%:OH=62.6%,UG:GIH=59.9%:OH=62.2%,96655
+Tractor Beam,Enchantment — Aura,4,U,U,3.13,,54.2%,58.4%,,,,,UB:GIH=60.0%:OH=56.1%,UG:GIH=59.3%:OH=57.7%,WU:GIH=58.9%:OH=55.6%,MULTI:GIH=57.6%:OH=55.1%,96656
+Unravel,Instant,3,U,U,5.78,,57.6%,58.5%,,,,,UG:GIH=56.9%:OH=56.0%,UB:GIH=56.6%:OH=52.3%,WU:GIH=54.3%:OH=52.5%,UR:GIH=54.1%:OH=50.4%,96657
+Uthros Psionicist,Creature — Jellyfish Scientist,3,U,U,3.78,,58.8%,58.7%,,,,,UG:GIH=58.3%:OH=57.9%,WU:GIH=58.1%:OH=58.1%,UB:GIH=57.9%:OH=56.4%,UR:GIH=57.5%:OH=56.4%,96658
+Uthros Scanship,Artifact — Spacecraft,4,U,U,4.16,,56.1%,57.8%,,,,,BG:GIH=61.1%:OH=50.0%,UG:GIH=58.9%:OH=57.0%,UB:GIH=58.3%:OH=57.1%,WU:GIH=57.4%:OH=57.9%,96659
+Weftwalking,Enchantment,6,U,M,2.74,,55.4%,59.2%,,,,,UG:GIH=60.1%:OH=54.6%,UB:GIH=58.3%:OH=52.5%,WU:GIH=58.2%:OH=51.6%,MULTI:GIH=58.0%:OH=49.6%,96660
+"Alpharael, Stonechosen",Legendary Creature — Human Cleric,5,B,M,3.04,,,,,,,,BR:GIH=53.2%:OH=49.5%,BG:GIH=51.3%:OH=53.4%,WB:GIH=51.0%:OH=46.2%,UB:GIH=46.2%:OH=42.3%,96661
+Archenemy's Charm,Instant,3,B,R,2.84,,55.7%,58.6%,,,,,UB:GIH=58.4%:OH=52.9%,BR:GIH=57.3%:OH=53.8%,WB:GIH=56.9%:OH=53.7%,BG:GIH=55.3%:OH=57.5%,96662
+Beamsaw Prospector,Creature — Human Artificer,2,B,C,4.76,,56.7%,56.0%,,,,,UB:GIH=56.5%:OH=56.4%,BR:GIH=56.0%:OH=56.3%,WB:GIH=55.4%:OH=55.8%,MULTI:GIH=53.3%:OH=53.3%,96663
+Blade of the Swarm,Creature — Insect Assassin,4,B,U,6.32,,,52.9%,,,,,WB:GIH=54.3%:OH=52.3%,BR:GIH=54.0%:OH=52.5%,BG:GIH=52.8%:OH=50.9%,UB:GIH=52.6%:OH=51.5%,96664
+Chorale of the Void,Enchantment — Aura,4,B,R,3.40,,,48.6%,,,,,WB:GIH=50.9%:OH=48.5%,UB:GIH=50.2%:OH=44.4%,BR:GIH=48.7%:OH=41.6%,BG:GIH=45.0%:OH=40.7%,96665
+Comet Crawler,Creature — Insect Horror,3,B,C,6.59,,55.0%,55.3%,,,,,UB:GIH=55.9%:OH=52.8%,BR:GIH=54.9%:OH=54.5%,WB:GIH=54.6%:OH=54.7%,MULTI:GIH=50.9%:OH=47.7%,96666
+Dark Endurance,Instant,2,B,C,7.79,,,52.1%,,,,,WB:GIH=54.2%:OH=49.1%,BG:GIH=52.5%:OH=49.1%,BR:GIH=52.2%:OH=47.9%,UB:GIH=51.8%:OH=41.3%,96667
+Decode Transmissions,Sorcery,3,B,C,6.51,,50.4%,53.3%,,,,,WB:GIH=53.4%:OH=50.8%,BR:GIH=53.3%:OH=49.7%,UB:GIH=52.9%:OH=48.9%,BG:GIH=51.8%:OH=47.5%,96668
+Depressurize,Instant,2,B,C,3.54,,55.9%,58.2%,,,,,UG:GIH=60.1%:OH=58.3%,UB:GIH=57.9%:OH=54.9%,WB:GIH=57.2%:OH=55.6%,BR:GIH=56.9%:OH=55.5%,96669
+Dubious Delicacy,Artifact — Food,3,B,U,2.47,,58.2%,60.1%,,,,,WB:GIH=62.2%:OH=61.1%,UB:GIH=62.1%:OH=59.3%,WG:GIH=61.5%:OH=60.3%,BR:GIH=61.2%:OH=60.1%,96670
+Elegy Acolyte,Creature — Human Cleric,4,B,R,1.46,,63.7%,64.2%,,,,,BR:GIH=67.6%:OH=66.6%,UB:GIH=67.2%:OH=67.5%,WB:GIH=65.5%:OH=66.3%,BG:GIH=64.2%:OH=64.2%,96671
+Embrace Oblivion,Sorcery,1,B,C,5.00,,53.6%,56.4%,,,,,UB:GIH=57.2%:OH=53.3%,BR:GIH=56.7%:OH=54.5%,WB:GIH=56.0%:OH=53.6%,UG:GIH=53.8%:OH=53.9%,96672
+Entropic Battlecruiser,Artifact — Spacecraft,4,B,R,2.86,,,52.6%,,,,,WB:GIH=55.4%:OH=56.4%,MULTI:GIH=53.7%:OH=52.2%,UB:GIH=53.3%:OH=49.6%,UG:GIH=53.0%:OH=31.4%,96673
+Faller's Faithful,Creature — Human Wizard,3,B,U,3.43,,56.4%,58.5%,,,,,UB:GIH=59.4%:OH=55.4%,BR:GIH=58.8%:OH=57.4%,WB:GIH=58.5%:OH=57.2%,BG:GIH=55.3%:OH=52.5%,96674
+Fell Gravship,Artifact — Spacecraft,3,B,U,3.34,,59.0%,60.8%,,,,,WB:GIH=63.0%:OH=62.5%,WG:GIH=62.2%:OH=65.0%,UB:GIH=60.9%:OH=59.0%,BR:GIH=60.0%:OH=59.0%,96675
+Gravblade Heavy,Creature — Human Soldier,4,B,C,7.47,,51.7%,51.5%,,,,,BR:GIH=52.6%:OH=51.8%,MULTI:GIH=51.3%:OH=55.0%,UB:GIH=50.7%:OH=48.0%,BG:GIH=50.4%:OH=51.2%,96676
+Gravkill,Instant,4,B,C,3.13,,53.8%,56.9%,,,,,RG:GIH=57.6%:OH=57.8%,WB:GIH=57.5%:OH=55.5%,UG:GIH=57.2%:OH=53.3%,UB:GIH=56.9%:OH=52.8%,96677
+Gravpack Monoist,Creature — Human Scout,3,B,C,4.74,,57.0%,57.9%,,,,,BR:GIH=58.5%:OH=58.2%,WB:GIH=58.1%:OH=58.1%,UB:GIH=58.0%:OH=56.4%,BG:GIH=53.4%:OH=52.0%,96678
+Hullcarver,Artifact Creature — Robot Assassin,1,B,C,5.33,,57.0%,56.5%,,,,,UB:GIH=57.1%:OH=56.7%,BR:GIH=56.7%:OH=57.1%,WB:GIH=56.6%:OH=57.6%,MULTI:GIH=53.4%:OH=54.0%,96679
+Hylderblade,Artifact — Equipment,1,B,U,5.11,,54.1%,55.3%,,,,,WB:GIH=57.0%:OH=58.5%,UB:GIH=54.5%:OH=52.9%,BR:GIH=54.1%:OH=51.2%,BG:GIH=51.8%:OH=52.5%,96680
+Hymn of the Faller,Sorcery,2,B,U,4.61,,49.9%,52.5%,,,,,WB:GIH=52.8%:OH=50.2%,BR:GIH=52.3%:OH=48.7%,UB:GIH=51.7%:OH=48.0%,BG:GIH=50.7%:OH=45.1%,96681
+Insatiable Skittermaw,Creature — Insect Horror,3,B,C,6.57,,54.2%,53.3%,,,,,WB:GIH=55.2%:OH=55.3%,BR:GIH=53.3%:OH=53.4%,UB:GIH=49.8%:OH=47.6%,BG:GIH=47.9%:OH=46.2%,96682
+Lightless Evangel,Creature — Vampire Cleric,2,B,U,4.33,,54.0%,54.7%,,,,,UB:GIH=54.6%:OH=56.0%,BR:GIH=54.5%:OH=54.9%,WB:GIH=53.8%:OH=53.0%,BG:GIH=52.0%:OH=50.6%,96683
+Monoist Circuit-Feeder,Artifact Creature — Nautilus,6,B,U,3.01,,54.8%,59.9%,,,,,UG:GIH=60.1%:OH=42.9%,UB:GIH=60.1%:OH=55.5%,BG:GIH=59.8%:OH=56.4%,BR:GIH=59.8%:OH=55.8%,96684
+Monoist Sentry,Artifact Creature — Robot,1,B,U,5.49,,54.5%,54.5%,,,,,UB:GIH=55.0%:OH=54.6%,BR:GIH=54.0%:OH=52.7%,BG:GIH=53.2%:OH=51.4%,MULTI:GIH=50.9%:OH=47.4%,96685
+Perigee Beckoner,Creature — Horror,5,B,C,5.41,,53.8%,57.3%,,,,,WB:GIH=57.6%:OH=55.9%,BR:GIH=57.5%:OH=54.4%,UB:GIH=56.7%:OH=53.4%,BG:GIH=54.3%:OH=52.9%,96686
+Requiem Monolith,Artifact,3,B,R,2.45,,57.1%,55.0%,,,,,WG:GIH=62.7%:OH=64.4%,UG:GIH=58.1%:OH=64.5%,WB:GIH=58.1%:OH=61.6%,BR:GIH=56.0%:OH=56.5%,96687
+Scrounge for Eternity,Sorcery,3,B,U,5.72,,46.2%,49.2%,,,,,UB:GIH=52.2%:OH=51.3%,BR:GIH=50.9%:OH=48.4%,WB:GIH=49.4%:OH=45.2%,MULTI:GIH=47.7%:OH=44.5%,96688
+"Sothera, the Supervoid",Legendary Enchantment,4,B,M,2.11,,,53.8%,,,,,BR:GIH=55.4%:OH=54.3%,UB:GIH=54.7%:OH=50.0%,MULTI:GIH=53.5%:OH=53.7%,BG:GIH=51.7%:OH=49.4%,96689
+Sunset Saboteur,Creature — Human Rogue,2,B,R,2.49,,67.2%,63.8%,,,,,UB:GIH=62.6%:OH=65.0%,BR:GIH=62.6%:OH=65.7%,WB:GIH=61.9%:OH=64.7%,BG:GIH=61.0%:OH=64.8%,96690
+Susurian Dirgecraft,Artifact — Spacecraft,5,B,U,4.20,,53.0%,56.1%,,,,,UG:GIH=56.8%:OH=50.9%,UB:GIH=55.9%:OH=53.5%,WB:GIH=55.7%:OH=53.7%,BG:GIH=53.8%:OH=51.5%,96691
+Susurian Voidborn,Creature — Vampire Soldier,3,B,U,3.71,,54.7%,57.0%,,,,,WB:GIH=56.5%:OH=54.6%,BR:GIH=55.2%:OH=52.8%,UB:GIH=54.5%:OH=51.9%,BG:GIH=52.6%:OH=51.0%,96692
+Swarm Culler,Creature — Insect Warrior,4,B,C,6.13,,51.1%,54.2%,,,,,BR:GIH=53.4%:OH=51.7%,UB:GIH=53.1%:OH=50.3%,WB:GIH=52.3%:OH=49.3%,BG:GIH=50.8%:OH=50.1%,96693
+Temporal Intervention,Sorcery,3,B,C,8.01,,,53.1%,,,,,BR:GIH=53.0%:OH=50.3%,WB:GIH=52.9%:OH=51.0%,BG:GIH=52.7%:OH=51.3%,UB:GIH=51.2%:OH=46.5%,96694
+Timeline Culler,Creature — Drix Warlock,2,B,U,4.15,,57.4%,57.9%,,,,,BR:GIH=57.4%:OH=57.4%,WB:GIH=57.1%:OH=57.3%,UB:GIH=56.5%:OH=55.6%,BG:GIH=51.7%:OH=51.9%,96695
+Tragic Trajectory,Sorcery,1,B,U,2.76,,56.1%,58.4%,,,,,RG:GIH=62.9%:OH=55.4%,UB:GIH=58.6%:OH=56.5%,BR:GIH=58.6%:OH=57.2%,MULTI:GIH=56.8%:OH=49.5%,96696
+Umbral Collar Zealot,Creature — Human Cleric,2,B,U,3.26,,58.9%,57.8%,,,,,BR:GIH=58.9%:OH=60.3%,WB:GIH=58.6%:OH=58.5%,UB:GIH=57.8%:OH=57.3%,BG:GIH=54.0%:OH=53.6%,96697
+Virus Beetle,Artifact Creature — Insect,2,B,C,4.03,,57.4%,57.7%,,,,,UB:GIH=59.1%:OH=58.9%,WB:GIH=57.6%:OH=57.5%,BR:GIH=57.3%:OH=57.3%,BG:GIH=55.0%:OH=55.5%,96698
+Voidforged Titan,Artifact Creature — Robot Warrior,5,B,U,3.73,,53.2%,54.4%,,,,,WB:GIH=54.2%:OH=53.4%,BR:GIH=53.7%:OH=51.7%,UB:GIH=53.1%:OH=50.6%,BG:GIH=52.7%:OH=52.3%,96699
+Vote Out,Sorcery,4,B,U,2.94,,54.6%,57.1%,,,,,UG:GIH=58.7%:OH=54.9%,WG:GIH=57.9%:OH=60.0%,WB:GIH=57.2%:OH=55.2%,BR:GIH=57.0%:OH=54.1%,96700
+"Xu-Ifit, Osteoharmonist",Legendary Creature — Human Wizard,3,B,R,2.32,,58.1%,56.3%,,,,,WB:GIH=57.6%:OH=58.6%,UB:GIH=56.1%:OH=54.7%,BR:GIH=54.6%:OH=51.3%,BG:GIH=52.7%:OH=51.1%,96701
+Zero Point Ballad,Sorcery,1,B,R,1.96,,58.2%,59.5%,,,,,RG:GIH=62.2%:OH=57.9%,UG:GIH=59.4%:OH=61.1%,MULTI:GIH=59.3%:OH=56.2%,UB:GIH=58.9%:OH=55.5%,96702
+Bombard,Instant,3,R,C,4.33,,52.7%,55.1%,,,,,UG:GIH=55.9%:OH=56.0%,BR:GIH=55.8%:OH=54.1%,WG:GIH=55.6%:OH=52.8%,RG:GIH=55.3%:OH=54.3%,96703
+Cut Propulsion,Instant,3,R,U,3.86,,53.8%,56.6%,,,,,RG:GIH=57.8%:OH=56.2%,UG:GIH=57.7%:OH=58.4%,BR:GIH=57.2%:OH=54.6%,WR:GIH=56.4%:OH=53.9%,96704
+Debris Field Crusher,Artifact — Spacecraft,5,R,U,4.75,,46.9%,50.3%,,,,,RG:GIH=55.7%:OH=53.7%,BR:GIH=53.9%:OH=51.3%,MULTI:GIH=52.8%:OH=45.6%,UR:GIH=52.7%:OH=51.0%,96705
+Devastating Onslaught,Sorcery,1,R,M,2.65,,,57.4%,,,,,UG:GIH=65.5%:OH=53.2%,MULTI:GIH=58.7%:OH=57.7%,RG:GIH=58.3%:OH=57.7%,UR:GIH=57.7%:OH=52.5%,96706
+Drill Too Deep,Instant,2,R,C,7.89,,,56.0%,,,,,BR:GIH=52.1%:OH=51.2%,UR:GIH=50.2%:OH=47.0%,WR:GIH=49.0%:OH=43.8%,RG:GIH=48.5%:OH=48.4%,96707
+Frontline War-Rager,Creature — Kavu Soldier,3,R,C,7.22,,52.1%,51.6%,,,,,RG:GIH=51.9%:OH=49.0%,WR:GIH=50.4%:OH=51.8%,BR:GIH=50.1%:OH=49.4%,UR:GIH=44.8%:OH=43.3%,96708
+Full Bore,Instant,1,R,U,6.55,,,54.2%,,,,,UR:GIH=54.7%:OH=54.8%,RG:GIH=52.8%:OH=52.2%,WR:GIH=52.6%:OH=53.3%,MULTI:GIH=51.7%:OH=51.2%,96709
+Galvanizing Sawship,Artifact — Spacecraft,6,R,U,5.18,,46.8%,49.1%,,,,,RG:GIH=51.0%:OH=47.6%,BR:GIH=50.4%:OH=45.6%,WR:GIH=49.0%:OH=45.6%,MULTI:GIH=48.9%:OH=46.8%,96710
+Invasive Maneuvers,Instant,2,R,U,3.38,,54.6%,56.1%,,,,,UG:GIH=64.9%:OH=65.0%,BR:GIH=57.5%:OH=56.1%,RG:GIH=56.2%:OH=55.4%,MULTI:GIH=55.7%:OH=53.4%,96711
+Kav Landseeker,Creature — Kavu Soldier,4,R,C,5.11,,55.2%,56.8%,,,,,BR:GIH=57.9%:OH=56.2%,RG:GIH=57.2%:OH=56.0%,UR:GIH=55.9%:OH=53.8%,MULTI:GIH=54.5%:OH=52.9%,96712
+Kavaron Harrier,Artifact Creature — Robot Soldier,1,R,U,4.27,,61.4%,57.8%,,,,,RG:GIH=58.0%:OH=61.2%,BR:GIH=57.2%:OH=58.6%,WR:GIH=56.9%:OH=60.4%,UR:GIH=56.4%:OH=59.3%,96713
+Kavaron Skywarden,Creature — Kavu Soldier,5,R,C,7.15,,51.5%,53.8%,,,,,RG:GIH=53.5%:OH=53.3%,BR:GIH=52.6%:OH=50.5%,UR:GIH=52.4%:OH=49.9%,MULTI:GIH=49.3%:OH=45.0%,96714
+Kavaron Turbodrone,Artifact Creature — Robot Scout,3,R,C,6.66,,51.8%,52.3%,,,,,BR:GIH=53.1%:OH=53.2%,UR:GIH=52.0%:OH=50.5%,RG:GIH=51.5%:OH=51.4%,WR:GIH=51.3%:OH=52.4%,96715
+Lithobraking,Instant,3,R,U,6.07,,49.9%,52.2%,,,,,MULTI:GIH=53.1%:OH=47.4%,RG:GIH=52.4%:OH=49.1%,UR:GIH=51.8%:OH=49.9%,BR:GIH=50.3%:OH=51.5%,96716
+Melded Moxite,Artifact,2,R,C,5.88,,56.3%,56.9%,,,,,BR:GIH=58.4%:OH=58.5%,RG:GIH=56.1%:OH=54.2%,UR:GIH=55.8%:OH=56.0%,MULTI:GIH=55.2%:OH=53.8%,96717
+Memorial Team Leader,Creature — Kavu Soldier,4,R,U,5.16,,53.1%,54.1%,,,,,BR:GIH=55.3%:OH=52.9%,RG:GIH=53.2%:OH=52.9%,WR:GIH=53.2%:OH=51.6%,MULTI:GIH=53.1%:OH=49.4%,96718
+Memorial Vault,Artifact,4,R,R,5.33,,,,,,,,UR:GIH=54.6%:OH=49.1%,BR:GIH=53.2%:OH=51.4%,WR:GIH=52.4%:OH=44.4%,RG:GIH=50.0%:OH=47.0%,96719
+Molecular Modifier,Creature — Kavu Artificer,3,R,U,4.65,,54.9%,56.1%,,,,,RG:GIH=56.3%:OH=55.9%,BR:GIH=56.2%:OH=55.4%,WR:GIH=55.6%:OH=55.6%,UR:GIH=53.9%:OH=53.4%,96720
+Nebula Dragon,Creature — Dragon,7,R,C,6.56,,54.4%,57.5%,,,,,BG:GIH=61.3%:OH=59.1%,UG:GIH=59.0%:OH=55.1%,WG:GIH=58.9%:OH=54.8%,RG:GIH=58.0%:OH=54.9%,96721
+Nova Hellkite,Creature — Dragon,5,R,R,1.60,,60.6%,63.6%,,,,,BR:GIH=63.9%:OH=61.4%,RG:GIH=63.0%:OH=60.5%,UR:GIH=62.3%:OH=58.6%,WR:GIH=61.3%:OH=62.5%,96722
+Orbital Plunge,Sorcery,4,R,C,3.93,,55.1%,57.7%,,,,,UG:GIH=59.9%:OH=54.6%,BR:GIH=58.8%:OH=55.7%,RG:GIH=58.1%:OH=56.0%,UR:GIH=57.1%:OH=56.1%,96723
+Oreplate Pangolin,Artifact Creature — Robot Pangolin,2,R,C,5.05,,54.9%,55.1%,,,,,UR:GIH=54.8%:OH=55.8%,BR:GIH=54.5%:OH=55.4%,WR:GIH=53.1%:OH=54.9%,RG:GIH=53.0%:OH=54.7%,96724
+Pain for All,Enchantment — Aura,3,R,R,2.55,,51.7%,54.8%,,,,,UG:GIH=57.4%:OH=50.0%,WR:GIH=56.7%:OH=60.6%,RG:GIH=55.1%:OH=53.4%,UR:GIH=54.8%:OH=50.7%,96725
+Plasma Bolt,Sorcery,1,R,C,4.40,,54.7%,56.8%,,,,,UG:GIH=57.2%:OH=59.1%,BR:GIH=56.7%:OH=55.6%,UR:GIH=56.6%:OH=54.1%,RG:GIH=56.2%:OH=54.3%,96726
+Possibility Technician,Creature — Kavu Artificer,3,R,R,2.04,,62.9%,62.1%,,,,,BR:GIH=63.7%:OH=64.0%,RG:GIH=61.5%:OH=62.9%,UR:GIH=60.0%:OH=61.4%,MULTI:GIH=59.1%:OH=59.7%,96727
+Red Tiger Mechan,Artifact Creature — Robot Cat,4,R,C,6.92,,47.9%,51.0%,,,,,BR:GIH=52.0%:OH=48.9%,UR:GIH=50.5%:OH=48.8%,WR:GIH=49.7%:OH=48.9%,RG:GIH=47.7%:OH=44.9%,96728
+Remnant Elemental,Creature — Elemental,2,R,U,6.17,,54.3%,53.2%,,,,,RG:GIH=53.7%:OH=54.5%,BR:GIH=52.3%:OH=55.0%,MULTI:GIH=51.3%:OH=47.4%,WR:GIH=49.2%:OH=48.3%,96729
+Rig for War,Instant,2,R,C,8.04,,,51.1%,,,,,BR:GIH=54.1%:OH=50.5%,WR:GIH=52.3%:OH=49.7%,RG:GIH=52.0%:OH=52.0%,UR:GIH=48.8%:OH=42.4%,96730
+Roving Actuator,Artifact Creature — Robot,4,R,U,6.02,,46.9%,51.6%,,,,,BR:GIH=55.3%:OH=52.3%,RG:GIH=52.9%:OH=53.0%,WR:GIH=52.8%:OH=51.3%,MULTI:GIH=51.8%:OH=45.1%,96731
+Ruinous Rampage,Sorcery,3,R,U,7.38,,,,,,,,BR:GIH=46.6%:OH=42.2%,RG:GIH=34.7%:OH=32.7%,,,96732
+Rust Harvester,Artifact Creature — Robot,1,R,R,2.35,,59.2%,58.3%,,,,,UR:GIH=60.3%:OH=60.1%,BR:GIH=59.4%:OH=60.0%,WR:GIH=57.9%:OH=58.6%,RG:GIH=57.2%:OH=57.9%,96733
+Slagdrill Scrapper,Artifact Creature — Robot Scout,1,R,C,6.58,,54.6%,55.2%,,,,,BR:GIH=55.4%:OH=55.1%,UR:GIH=54.6%:OH=53.3%,RG:GIH=54.2%:OH=53.2%,WR:GIH=53.3%:OH=54.0%,96734
+Systems Override,Sorcery,3,R,U,5.94,,55.2%,57.4%,,,,,BR:GIH=58.5%:OH=54.5%,WR:GIH=54.0%:OH=49.1%,RG:GIH=52.9%:OH=45.1%,MULTI:GIH=48.8%:OH=46.9%,96735
+"Tannuk, Steadfast Second",Legendary Creature — Kavu Pilot,4,R,M,2.01,,,55.7%,,,,,WR:GIH=58.5%:OH=53.0%,BR:GIH=56.8%:OH=53.7%,RG:GIH=54.0%:OH=52.8%,MULTI:GIH=52.6%:OH=48.7%,96736
+Terminal Velocity,Sorcery,6,R,R,5.41,,,,,,,,MULTI:GIH=49.5%:OH=52.3%,RG:GIH=49.0%:OH=43.0%,UR:GIH=49.0%:OH=58.6%,BR:GIH=46.1%:OH=49.4%,96737
+Terrapact Intimidator,Creature — Kavu Scout,2,R,U,2.67,,62.4%,59.7%,,,,,BR:GIH=61.6%:OH=63.0%,RG:GIH=60.7%:OH=64.7%,UR:GIH=59.5%:OH=62.0%,MULTI:GIH=59.1%:OH=61.6%,96738
+Territorial Bruntar,Creature — Beast,6,R,U,4.18,,52.5%,56.0%,,,,,RG:GIH=58.0%:OH=56.1%,BR:GIH=57.1%:OH=53.8%,MULTI:GIH=55.0%:OH=51.8%,UG:GIH=54.0%:OH=57.5%,96739
+Vaultguard Trooper,Creature — Kavu Soldier,5,R,U,5.31,,49.7%,53.5%,,,,,BR:GIH=55.0%:OH=51.2%,RG:GIH=54.5%:OH=52.1%,UR:GIH=53.1%:OH=50.9%,MULTI:GIH=51.8%:OH=49.2%,96740
+Warmaker Gunship,Artifact — Spacecraft,3,R,R,2.03,,59.9%,61.3%,,,,,UR:GIH=63.7%:OH=63.3%,BR:GIH=63.5%:OH=63.7%,UG:GIH=63.1%:OH=61.5%,RG:GIH=60.8%:OH=59.8%,96741
+Weapons Manufacturing,Enchantment,2,R,R,4.18,,,50.4%,,,,,UR:GIH=50.2%:OH=50.8%,BR:GIH=49.9%:OH=51.3%,MULTI:GIH=45.2%:OH=38.9%,RG:GIH=42.7%:OH=44.8%,96742
+Weftstalker Ardent,Creature — Drix Artificer,3,R,U,4.49,,53.3%,54.8%,,,,,BR:GIH=54.9%:OH=53.4%,RG:GIH=54.1%:OH=53.9%,UR:GIH=53.6%:OH=53.2%,MULTI:GIH=52.6%:OH=46.2%,96743
+Zookeeper Mechan,Artifact Creature — Robot,2,R,C,4.28,,57.2%,56.6%,,,,,BR:GIH=57.1%:OH=58.6%,UR:GIH=56.7%:OH=57.8%,RG:GIH=56.0%:OH=57.4%,WR:GIH=54.5%:OH=57.7%,96744
+Atmospheric Greenhouse,Artifact — Spacecraft,5,G,U,4.06,,44.9%,50.2%,,,,,WG:GIH=53.0%:OH=51.9%,UG:GIH=50.1%:OH=46.7%,RG:GIH=50.0%:OH=48.0%,BG:GIH=48.6%:OH=43.3%,96745
+Bioengineered Future,Enchantment,3,G,R,3.85,,,43.5%,,,,,UG:GIH=48.3%:OH=46.2%,MULTI:GIH=46.8%:OH=44.3%,RG:GIH=46.0%:OH=44.4%,BG:GIH=44.0%:OH=45.1%,96746
+Biosynthic Burst,Instant,2,G,C,5.49,,56.6%,58.3%,,,,,UG:GIH=58.2%:OH=55.6%,RG:GIH=57.9%:OH=56.0%,WG:GIH=57.8%:OH=55.3%,BG:GIH=55.2%:OH=54.6%,96747
+Blooming Stinger,Creature — Plant Scorpion,2,G,C,5.17,,56.9%,56.3%,,,,,UG:GIH=57.2%:OH=56.7%,RG:GIH=56.4%:OH=57.6%,WG:GIH=55.8%:OH=56.0%,MULTI:GIH=54.2%:OH=53.7%,96748
+Broodguard Elite,Creature — Insect Knight,2,G,U,3.64,,50.4%,53.3%,,,,,WG:GIH=54.7%:OH=53.1%,RG:GIH=53.7%:OH=51.0%,UG:GIH=53.3%:OH=49.8%,BG:GIH=53.0%:OH=50.8%,96749
+Close Encounter,Instant,2,G,U,3.32,,56.2%,57.7%,,,,,UG:GIH=58.8%:OH=56.1%,WG:GIH=57.9%:OH=55.4%,RG:GIH=56.5%:OH=54.5%,BG:GIH=55.9%:OH=54.2%,96750
+Diplomatic Relations,Instant,3,G,C,4.00,,55.1%,57.8%,,,,,UG:GIH=59.2%:OH=56.2%,WG:GIH=57.1%:OH=56.3%,RG:GIH=56.9%:OH=55.5%,BG:GIH=55.3%:OH=52.1%,96751
+Drix Fatemaker,Creature — Drix Wizard,4,G,C,5.02,,53.4%,55.1%,,,,,WG:GIH=55.6%:OH=54.3%,RG:GIH=54.3%:OH=52.6%,UG:GIH=54.1%:OH=53.1%,BG:GIH=52.5%:OH=51.3%,96752
+Edge Rover,Artifact Creature — Robot Scout,1,G,U,3.34,,61.4%,58.2%,,,,,UG:GIH=59.5%:OH=62.6%,RG:GIH=57.6%:OH=60.4%,WG:GIH=57.5%:OH=60.6%,MULTI:GIH=57.1%:OH=58.1%,96753
+Eumidian Terrabotanist,Creature — Insect Druid,2,G,U,3.50,,59.1%,58.3%,,,,,UG:GIH=58.5%:OH=59.2%,RG:GIH=57.6%:OH=59.2%,WG:GIH=56.9%:OH=58.7%,MULTI:GIH=55.1%:OH=55.3%,96754
+Eusocial Engineering,Enchantment,5,G,U,3.34,,58.7%,57.9%,,,,,UG:GIH=58.8%:OH=60.4%,RG:GIH=58.2%:OH=59.1%,MULTI:GIH=56.4%:OH=58.1%,WG:GIH=55.8%:OH=56.8%,96755
+Famished Worldsire,Creature — Leviathan,8,G,M,2.59,,,55.0%,,,,,RG:GIH=58.4%:OH=56.6%,MULTI:GIH=56.9%:OH=52.3%,UG:GIH=55.6%:OH=54.7%,WG:GIH=54.6%:OH=50.5%,96756
+Frenzied Baloth,Creature — Beast,2,G,R,2.85,,60.5%,59.1%,,,,,WG:GIH=57.6%:OH=56.4%,RG:GIH=56.9%:OH=57.9%,BG:GIH=55.9%:OH=57.8%,UG:GIH=55.7%:OH=54.2%,96757
+Fungal Colossus,Creature — Fungus Beast,7,G,C,6.45,,55.1%,56.6%,,,,,UG:GIH=57.8%:OH=53.9%,MULTI:GIH=55.4%:OH=53.3%,RG:GIH=55.3%:OH=54.1%,BG:GIH=54.3%:OH=53.2%,96758
+Galactic Wayfarer,Creature — Human Scout,3,G,C,3.39,,60.0%,59.7%,,,,,UG:GIH=60.3%:OH=60.8%,RG:GIH=58.0%:OH=58.9%,WG:GIH=58.0%:OH=58.7%,BG:GIH=57.9%:OH=58.5%,96759
+Gene Pollinator,Artifact Creature — Robot Insect,1,G,C,4.32,,61.8%,58.1%,,,,,UG:GIH=59.6%:OH=62.7%,WG:GIH=57.7%:OH=62.0%,RG:GIH=57.4%:OH=61.3%,MULTI:GIH=57.2%:OH=60.0%,96760
+Germinating Wurm,Creature — Plant Wurm,5,G,C,5.38,,55.6%,57.6%,,,,,UG:GIH=58.1%:OH=55.8%,RG:GIH=56.3%:OH=55.0%,MULTI:GIH=55.4%:OH=52.1%,BG:GIH=55.2%:OH=51.5%,96761
+Glacier Godmaw,Creature — Leviathan,7,G,U,2.50,,56.3%,60.5%,,,,,UG:GIH=61.6%:OH=57.6%,RG:GIH=60.8%:OH=56.4%,MULTI:GIH=59.3%:OH=55.6%,WG:GIH=59.3%:OH=56.9%,96762
+Harmonious Grovestrider,Creature — Beast,5,G,U,3.29,,57.0%,59.4%,,,,,UG:GIH=60.1%:OH=58.7%,RG:GIH=59.7%:OH=59.4%,WG:GIH=58.3%:OH=57.3%,BG:GIH=57.6%:OH=55.3%,96763
+Hemosymbic Mite,Creature — Mite,1,G,U,5.56,,57.2%,55.2%,,,,,WG:GIH=56.3%:OH=59.6%,UG:GIH=54.8%:OH=57.7%,RG:GIH=52.9%:OH=53.1%,BG:GIH=50.9%:OH=51.7%,96764
+Icecave Crasher,Creature — Beast,4,G,C,5.67,,55.8%,56.7%,,,,,UG:GIH=57.6%:OH=56.3%,RG:GIH=56.1%:OH=55.7%,WG:GIH=55.7%:OH=55.0%,BG:GIH=54.5%:OH=54.1%,96765
+Icetill Explorer,Creature — Insect Scout,4,G,R,2.69,,53.1%,53.0%,,,,,UG:GIH=54.5%:OH=52.7%,WG:GIH=53.1%:OH=53.0%,RG:GIH=51.1%:OH=52.4%,MULTI:GIH=49.8%:OH=47.1%,96766
+Intrepid Tenderfoot,Creature — Insect Citizen,2,G,C,5.53,,56.0%,56.0%,,,,,UG:GIH=56.0%:OH=55.8%,WG:GIH=55.5%:OH=55.8%,RG:GIH=54.9%:OH=54.9%,MULTI:GIH=53.9%:OH=52.0%,96767
+Larval Scoutlander,Artifact — Spacecraft,3,G,U,2.74,,61.4%,59.9%,,,,,UG:GIH=61.2%:OH=62.7%,WG:GIH=60.8%:OH=61.6%,RG:GIH=59.8%:OH=60.1%,MULTI:GIH=57.6%:OH=58.8%,96768
+Lashwhip Predator,Creature — Plant Beast,6,G,U,3.92,,52.9%,55.0%,,,,,UG:GIH=57.0%:OH=53.2%,WG:GIH=55.0%:OH=53.6%,RG:GIH=55.0%:OH=54.0%,BG:GIH=54.1%:OH=51.8%,96769
+Loading Zone,Enchantment,4,G,R,4.44,,,,,,,,WG:GIH=40.7%:OH=36.9%,RG:GIH=40.0%:OH=43.5%,UG:GIH=36.4%:OH=33.3%,,96770
+Meltstrider Eulogist,Creature — Insect Soldier,3,G,U,4.49,,53.8%,53.9%,,,,,WG:GIH=55.9%:OH=55.3%,UG:GIH=53.5%:OH=54.2%,RG:GIH=52.4%:OH=53.1%,MULTI:GIH=52.1%:OH=49.0%,96771
+Meltstrider's Gear,Artifact — Equipment,1,G,C,8.05,,,,,,,,UG:GIH=55.4%:OH=56.4%,RG:GIH=50.9%:OH=51.6%,WG:GIH=48.6%:OH=46.3%,BG:GIH=45.2%:OH=48.1%,96772
+Meltstrider's Resolve,Enchantment — Aura,1,G,U,3.20,,58.8%,60.3%,,,,,UG:GIH=60.5%:OH=59.5%,WG:GIH=59.6%:OH=58.2%,RG:GIH=58.2%:OH=57.3%,BG:GIH=57.0%:OH=55.9%,96773
+Mightform Harmonizer,Creature — Insect Druid,4,G,R,1.83,,56.8%,58.0%,,,,,BG:GIH=60.5%:OH=60.7%,RG:GIH=60.4%:OH=58.0%,UG:GIH=60.1%:OH=58.2%,WG:GIH=58.6%:OH=55.1%,96774
+Ouroboroid,Creature — Plant Wurm,4,G,M,1.35,,67.4%,67.0%,,,,,WG:GIH=68.4%:OH=68.2%,UG:GIH=68.2%:OH=67.2%,RG:GIH=68.1%:OH=66.7%,BG:GIH=65.8%:OH=64.6%,96775
+Pull Through the Weft,Sorcery,5,G,U,6.59,,,50.3%,,,,,RG:GIH=52.3%:OH=51.5%,UG:GIH=51.8%:OH=47.1%,BG:GIH=49.9%:OH=44.4%,MULTI:GIH=47.6%:OH=46.1%,96776
+Sami's Curiosity,Sorcery,1,G,C,5.20,,56.8%,54.9%,,,,,UG:GIH=56.4%:OH=58.7%,MULTI:GIH=54.5%:OH=56.8%,RG:GIH=53.9%:OH=55.9%,BG:GIH=52.4%:OH=54.8%,96777
+Seedship Agrarian,Creature — Insect Scientist,4,G,U,2.49,,57.1%,58.0%,,,,,RG:GIH=57.8%:OH=57.4%,UG:GIH=57.6%:OH=57.8%,WG:GIH=57.1%:OH=56.1%,MULTI:GIH=56.6%:OH=54.8%,96778
+Seedship Impact,Instant,2,G,U,4.10,,56.0%,58.5%,,,,,UG:GIH=60.4%:OH=59.9%,RG:GIH=58.6%:OH=58.3%,WG:GIH=57.3%:OH=57.0%,MULTI:GIH=57.3%:OH=53.5%,96779
+Shattered Wings,Sorcery,3,G,C,6.89,,48.6%,51.2%,,,,,UG:GIH=53.2%:OH=50.2%,RG:GIH=52.8%:OH=51.0%,WG:GIH=52.1%:OH=49.5%,BG:GIH=50.0%:OH=47.5%,96780
+Skystinger,Creature — Insect Warrior,3,G,C,6.73,,54.0%,55.4%,,,,,UG:GIH=56.2%:OH=53.9%,RG:GIH=53.6%:OH=53.0%,WG:GIH=52.1%:OH=51.7%,MULTI:GIH=51.4%:OH=49.8%,96781
+Sledge-Class Seedship,Artifact — Spacecraft,3,G,R,2.66,,58.1%,58.5%,,,,,RG:GIH=58.0%:OH=58.7%,WG:GIH=57.3%:OH=60.7%,UG:GIH=56.7%:OH=56.6%,BG:GIH=54.9%:OH=57.2%,96782
+Tapestry Warden,Artifact Creature — Robot Soldier,4,G,U,5.15,,51.8%,54.3%,,,,,UG:GIH=56.7%:OH=54.7%,RG:GIH=53.9%:OH=51.4%,WG:GIH=52.4%:OH=52.7%,MULTI:GIH=51.9%:OH=51.7%,96783
+Terrasymbiosis,Enchantment,3,G,R,3.79,,,49.9%,,,,,WG:GIH=50.7%:OH=49.8%,RG:GIH=47.1%:OH=44.1%,BG:GIH=43.1%:OH=36.5%,MULTI:GIH=41.9%:OH=41.4%,96784
+Thawbringer,Creature — Insect Scout,3,G,C,5.90,,56.6%,56.4%,,,,,UG:GIH=57.2%:OH=57.1%,WG:GIH=56.1%:OH=55.9%,RG:GIH=56.0%:OH=55.9%,BG:GIH=56.0%:OH=54.4%,96785
+"Alpharael, Dreaming Acolyte",Legendary Creature — Human Cleric,3,UB,U,5.12,,59.1%,59.6%,,,,,WB:GIH=64.7%:OH=62.5%,UR:GIH=61.9%:OH=60.0%,UB:GIH=59.5%:OH=58.8%,BR:GIH=58.3%:OH=53.0%,96786
+Biomechan Engineer,Creature — Insect Artificer,2,UG,U,3.30,,61.4%,61.0%,,,,,UG:GIH=62.9%:OH=65.0%,MULTI:GIH=59.8%:OH=59.7%,RG:GIH=59.2%:OH=59.2%,UB:GIH=57.6%:OH=53.6%,96787
+Biotech Specialist,Creature — Insect Scientist,2,RG,R,2.72,,58.2%,61.0%,,,,,RG:GIH=61.2%:OH=63.0%,MULTI:GIH=59.8%:OH=59.9%,WG:GIH=58.9%:OH=60.9%,UR:GIH=58.5%:OH=54.3%,96788
+Cosmogoyf,Creature — Elemental Lhurgoyf,2,BG,R,5.77,,,,,,,,,,,,96789
+"Dyadrine, Synthesis Amalgam",Legendary Artifact Creature — Construct,2,WG,R,2.74,,58.7%,59.6%,,,,,WG:GIH=59.2%:OH=58.4%,UG:GIH=58.0%:OH=56.8%,RG:GIH=54.6%:OH=55.1%,BG:GIH=53.8%:OH=55.8%,96790
+Genemorph Imago,Creature — Insect Druid,2,UG,R,2.55,,61.2%,61.6%,,,,,UG:GIH=63.9%:OH=64.8%,RG:GIH=61.9%:OH=62.3%,MULTI:GIH=61.7%:OH=60.2%,WG:GIH=60.1%:OH=58.8%,96791
+"Haliya, Ascendant Cadet",Legendary Creature — Human Soldier,5,WG,U,4.29,,53.4%,55.3%,,,,,WG:GIH=56.5%:OH=55.6%,WR:GIH=51.4%:OH=50.8%,RG:GIH=50.9%:OH=43.9%,WU:GIH=49.8%:OH=52.1%,96792
+Infinite Guideline Station,Legendary Artifact — Spacecraft,5,WUBRG,R,5.62,,,,,,,,MULTI:GIH=46.7%:OH=42.1%,,,,96793
+Interceptor Mechan,Artifact Creature — Robot,4,BR,U,3.92,,55.2%,58.4%,,,,,BR:GIH=58.8%:OH=55.6%,UB:GIH=56.6%:OH=48.6%,UR:GIH=56.0%:OH=53.1%,BG:GIH=56.0%:OH=54.4%,96794
+"Mm'menon, Uthros Exile",Legendary Creature — Jellyfish Advisor,3,UR,U,4.77,,53.5%,54.3%,,,,,UR:GIH=54.4%:OH=53.9%,UG:GIH=54.2%:OH=48.7%,UB:GIH=51.7%:OH=41.1%,RG:GIH=51.5%:OH=45.6%,96795
+Mutinous Massacre,Sorcery,7,BR,R,3.24,,53.7%,60.0%,,,,,RG:GIH=61.3%:OH=55.8%,BR:GIH=61.2%:OH=57.3%,UR:GIH=58.7%:OH=55.9%,BG:GIH=58.4%:OH=47.5%,96796
+Pinnacle Emissary,Artifact Creature — Robot,3,UR,R,2.83,,57.9%,59.4%,,,,,UR:GIH=60.9%:OH=61.1%,BR:GIH=57.9%:OH=59.5%,MULTI:GIH=56.9%:OH=55.4%,UB:GIH=55.1%:OH=48.7%,96797
+"Ragost, Deft Gastronaut",Legendary Creature — Lobster Citizen,2,WR,R,4.58,,,56.0%,,,,,WR:GIH=52.3%:OH=53.3%,MULTI:GIH=47.3%:OH=42.7%,UR:GIH=42.6%:OH=40.0%,BR:GIH=40.4%:OH=33.9%,96798
+"Sami, Ship's Engineer",Legendary Creature — Human Artificer,4,WR,U,5.37,,52.1%,53.4%,,,,,RG:GIH=54.0%:OH=48.6%,WR:GIH=52.7%:OH=52.8%,UR:GIH=50.6%:OH=45.8%,MULTI:GIH=49.3%:OH=46.3%,96799
+"Sami, Wildcat Captain",Legendary Creature — Human Artificer Rogue,6,WR,M,3.71,,,,,,,,WR:GIH=53.2%:OH=52.6%,MULTI:GIH=51.6%:OH=53.2%,BR:GIH=48.7%:OH=50.0%,RG:GIH=48.2%:OH=40.0%,96800
+Seedship Broodtender,Creature — Insect Citizen,2,BG,U,5.22,,56.5%,56.4%,,,,,RG:GIH=56.0%:OH=47.4%,BG:GIH=55.9%:OH=55.1%,MULTI:GIH=54.7%:OH=53.3%,UG:GIH=54.5%:OH=53.8%,96801
+Singularity Rupture,Sorcery,6,UB,R,2.94,,55.9%,59.9%,,,,,UB:GIH=61.0%:OH=57.9%,MULTI:GIH=59.8%:OH=55.8%,BG:GIH=59.7%:OH=58.0%,UG:GIH=59.5%:OH=54.0%,96802
+Space-Time Anomaly,Sorcery,4,WU,R,4.72,,,58.9%,,,,,WU:GIH=56.6%:OH=55.0%,UB:GIH=55.7%:OH=55.8%,WB:GIH=55.5%:OH=51.5%,MULTI:GIH=53.0%:OH=43.6%,96803
+Station Monitor,Creature — Lizard Artificer,2,WU,U,4.24,,58.9%,60.4%,,,,,WU:GIH=60.7%:OH=60.5%,WG:GIH=58.5%:OH=60.9%,UB:GIH=56.0%:OH=53.5%,MULTI:GIH=54.5%:OH=52.4%,96804
+"Syr Vondam, Sunstar Exemplar",Legendary Creature — Human Knight,2,WB,R,2.69,,58.6%,60.9%,,,,,WB:GIH=61.9%:OH=63.2%,MULTI:GIH=58.3%:OH=57.9%,UB:GIH=57.9%:OH=51.5%,WG:GIH=54.5%:OH=54.1%,96805
+"Syr Vondam, the Lucent",Legendary Creature — Human Knight,5,WB,U,4.22,,53.9%,58.1%,,,,,WB:GIH=58.5%:OH=56.0%,UB:GIH=56.9%:OH=53.3%,BG:GIH=55.1%:OH=50.8%,MULTI:GIH=52.5%:OH=50.4%,96806
+"Tannuk, Memorial Ensign",Legendary Creature — Kavu Pilot,3,RG,U,4.09,,56.3%,56.7%,,,,,UG:GIH=57.4%:OH=56.6%,RG:GIH=57.1%:OH=56.9%,MULTI:GIH=54.7%:OH=54.7%,WG:GIH=54.0%:OH=56.5%,96807
+All-Fates Scroll,Artifact,3,,U,5.00,,52.5%,56.2%,,,,,UG:GIH=56.5%:OH=54.1%,WB:GIH=56.3%:OH=51.0%,UB:GIH=56.1%:OH=53.6%,MULTI:GIH=56.0%:OH=54.2%,96808
+Bygone Colossus,Artifact Creature — Robot Giant,9,,U,6.56,,,,,,,,UB:GIH=50.8%:OH=50.0%,UG:GIH=46.9%:OH=45.9%,WR:GIH=46.8%:OH=35.3%,RG:GIH=46.8%:OH=35.6%,96809
+Chrome Companion,Artifact Creature — Dog,2,,C,6.74,,54.5%,55.3%,,,,,UB:GIH=55.0%:OH=54.9%,BR:GIH=54.0%:OH=53.2%,MULTI:GIH=53.8%:OH=51.1%,WB:GIH=53.7%:OH=51.9%,96810
+Dauntless Scrapbot,Artifact Creature — Robot,3,,U,3.20,,56.8%,57.0%,,,,,UB:GIH=60.1%:OH=60.1%,BR:GIH=59.2%:OH=58.1%,UG:GIH=58.4%:OH=57.7%,WU:GIH=57.9%:OH=57.5%,96811
+"Dawnsire, Sunstar Dreadnought",Legendary Artifact — Spacecraft,5,,M,1.98,,,49.4%,,,,,WG:GIH=54.0%:OH=51.4%,RG:GIH=51.7%:OH=53.1%,BG:GIH=51.3%:OH=50.0%,WU:GIH=50.9%:OH=50.5%,96812
+The Dominion Bracelet,Legendary Artifact — Equipment,2,,M,3.57,,,,,,,,RG:GIH=56.4%:OH=49.3%,UG:GIH=52.2%:OH=41.9%,WU:GIH=51.9%:OH=47.1%,WG:GIH=50.3%:OH=43.5%,96813
+The Endstone,Legendary Artifact,7,,M,1.71,,53.7%,55.8%,,,,,UB:GIH=59.4%:OH=57.1%,BR:GIH=59.0%:OH=57.5%,BG:GIH=57.6%:OH=59.0%,UG:GIH=55.7%:OH=49.3%,96814
+The Eternity Elevator,Legendary Artifact — Spacecraft,5,,R,5.28,,,,,,,,,,,,96815
+Extinguisher Battleship,Artifact — Spacecraft,8,,R,1.54,,55.6%,58.4%,,,,,UG:GIH=62.1%:OH=57.0%,UB:GIH=60.4%:OH=54.6%,MULTI:GIH=60.4%:OH=55.4%,RG:GIH=60.0%:OH=55.6%,96816
+Nutrient Block,Artifact — Food,1,,C,5.76,,55.2%,56.6%,,,,,UB:GIH=57.5%:OH=55.6%,UG:GIH=56.7%:OH=55.8%,BR:GIH=56.0%:OH=54.1%,WB:GIH=55.6%:OH=54.0%,96817
+Pinnacle Kill-Ship,Artifact — Spacecraft,7,,C,4.93,,54.3%,57.8%,,,,,UG:GIH=59.0%:OH=55.3%,RG:GIH=59.0%:OH=56.9%,UB:GIH=57.2%:OH=52.1%,UR:GIH=57.0%:OH=52.9%,96818
+Survey Mechan,Artifact Creature — Robot,4,,U,4.66,,54.5%,57.7%,,,,,UG:GIH=59.2%:OH=55.7%,MULTI:GIH=59.1%:OH=54.4%,RG:GIH=56.5%:OH=53.4%,BR:GIH=55.7%:OH=53.5%,96819
+Thaumaton Torpedo,Artifact,1,,C,7.60,,47.7%,51.3%,,,,,MULTI:GIH=54.3%:OH=47.1%,UB:GIH=53.8%:OH=46.8%,WU:GIH=52.6%:OH=55.1%,UG:GIH=52.5%:OH=49.5%,96820
+Thrumming Hivepool,Artifact,6,,R,1.40,,57.1%,58.2%,,,,,BR:GIH=59.9%:OH=59.0%,RG:GIH=58.9%:OH=61.5%,WB:GIH=58.8%:OH=59.9%,UB:GIH=58.5%:OH=57.3%,96821
+Virulent Silencer,Artifact Creature — Robot Assassin,3,,U,6.22,,,51.6%,,,,,UB:GIH=54.2%:OH=51.6%,UG:GIH=51.4%:OH=53.6%,BR:GIH=50.0%:OH=48.8%,UR:GIH=49.8%:OH=48.8%,96822
+Wurmwall Sweeper,Artifact — Spacecraft,2,,C,5.65,,54.2%,54.9%,,,,,WU:GIH=57.1%:OH=55.7%,WR:GIH=55.4%:OH=58.3%,WG:GIH=55.2%:OH=56.7%,WB:GIH=54.8%:OH=54.5%,96823
+"Adagia, Windswept Bastion",Land — Planet,0,,M,2.85,,59.3%,56.9%,,,,,WB:GIH=58.5%:OH=65.0%,UG:GIH=57.6%:OH=59.6%,WG:GIH=56.9%:OH=57.1%,WR:GIH=56.9%:OH=61.8%,96824
+Breeding Pool,Land — Forest Island,0,,R,3.74,,62.0%,59.3%,,,,,RG:GIH=58.6%:OH=59.6%,MULTI:GIH=57.5%:OH=56.2%,UG:GIH=57.3%:OH=58.2%,BG:GIH=56.0%:OH=57.6%,96825
+Command Bridge,Land,0,,C,5.53,,53.7%,53.9%,,,,,UG:GIH=56.8%:OH=55.8%,RG:GIH=54.1%:OH=54.1%,MULTI:GIH=54.0%:OH=53.1%,UB:GIH=52.9%:OH=52.4%,96826
+"Evendo, Waking Haven",Land — Planet,0,,M,4.15,,,,,,,,UG:GIH=55.4%:OH=59.7%,BG:GIH=52.2%:OH=52.4%,MULTI:GIH=50.3%:OH=57.4%,RG:GIH=49.7%:OH=51.9%,96827
+Godless Shrine,Land — Plains Swamp,0,,R,3.90,,58.6%,55.7%,,,,,WB:GIH=56.2%:OH=57.5%,BR:GIH=56.0%:OH=64.4%,UB:GIH=55.2%:OH=58.5%,WR:GIH=53.3%:OH=51.9%,96828
+"Kavaron, Memorial World",Land — Planet,0,,M,3.06,,56.8%,55.4%,,,,,RG:GIH=60.5%:OH=63.8%,WR:GIH=59.0%:OH=64.5%,BR:GIH=57.2%:OH=59.6%,UG:GIH=55.6%:OH=51.6%,96829
+Sacred Foundry,Land — Mountain Plains,0,,R,4.21,,,52.7%,,,,,UG:GIH=55.8%:OH=46.8%,RG:GIH=54.4%:OH=59.5%,WU:GIH=53.9%:OH=53.3%,WB:GIH=52.9%:OH=54.2%,96830
+Secluded Starforge,Land,0,,R,2.40,,57.4%,60.0%,,,,,UG:GIH=61.9%:OH=62.7%,UB:GIH=60.5%:OH=58.1%,BR:GIH=60.4%:OH=58.2%,WG:GIH=59.9%:OH=59.2%,96831
+Stomping Ground,Land — Mountain Forest,0,,R,3.88,,57.0%,56.1%,,,,,BR:GIH=62.9%:OH=62.8%,UG:GIH=61.1%:OH=58.6%,WG:GIH=58.0%:OH=56.9%,RG:GIH=55.6%:OH=58.7%,96832
+"Susur Secundi, Void Altar",Land — Planet,0,,M,3.33,,,54.2%,,,,,WB:GIH=55.8%:OH=57.6%,BG:GIH=52.5%:OH=51.2%,UB:GIH=51.8%:OH=49.8%,MULTI:GIH=49.6%:OH=46.2%,96833
+"Uthros, Titanic Godcore",Land — Planet,0,,M,4.51,,,,,,,,UR:GIH=55.6%:OH=51.0%,UB:GIH=52.3%:OH=47.1%,UG:GIH=50.0%:OH=45.2%,WU:GIH=44.3%:OH=45.9%,96834
+Watery Grave,Land — Island Swamp,0,,R,3.82,,55.8%,56.5%,,,,,RG:GIH=56.8%:OH=63.8%,UB:GIH=56.0%:OH=56.6%,BR:GIH=55.7%:OH=59.9%,UG:GIH=54.8%:OH=54.0%,96835
+Warping Wail,,,,U,5.98,,,,,,,,,,,,
+Deafening Silence,,,W,U,6.02,,,,,,,,,,,,
+Robe of Stars,,,W,R,4.97,,,,,,,,,,,,
+Nexus of Fate,,,U,M,3.00,,,,,,,,WU:GIH=58.2%:OH=44.0%,UB:GIH=55.4%:OH=47.3%,MULTI:GIH=52.9%:OH=50.0%,UR:GIH=51.8%:OH=45.5%,
+Paradox Haze,,,U,U,6.53,,,,,,,,,,,,
+Darkness,,,B,C,6.41,,,,,,,,,,,,
+Magus of the Moon,,,R,R,5.49,,,,,,,,,,,,
+Burgeoning,,,G,R,4.99,,,,,,,,,,,,
+Green Sun's Zenith,,,G,R,3.02,,,,,,,,UG:GIH=60.9%:OH=51.8%,BG:GIH=58.8%:OH=48.9%,WG:GIH=57.4%:OH=50.0%,RG:GIH=53.1%:OH=51.7%,
+Sliver Overlord,,,WUBRG,M,5.02,,,,,,,,,,,,
+Ancient Tomb,,,,M,3.00,,,,,,,,RG:GIH=60.7%:OH=65.4%,,,,
+Blast Zone,,,,R,4.66,,,,,,,,UB:GIH=61.9%:OH=58.2%,UG:GIH=60.6%:OH=62.0%,RG:GIH=55.4%:OH=54.5%,WU:GIH=48.5%:OH=47.8%,
+Blinkmoth Nexus,,,,R,3.73,,,56.3%,,,,,WU:GIH=62.9%:OH=57.4%,WR:GIH=61.6%:OH=63.3%,UG:GIH=61.5%:OH=61.1%,MULTI:GIH=61.5%:OH=53.7%,
+Bonders' Enclave,,,,R,3.91,,,59.0%,,,,,BR:GIH=63.3%:OH=65.4%,RG:GIH=61.3%:OH=58.0%,UG:GIH=58.6%:OH=56.5%,UB:GIH=58.4%:OH=53.0%,
+Cascading Cataracts,,,,R,5.73,,,,,,,,,,,,
+Cathedral of War,,,,R,4.28,,,52.9%,,,,,UG:GIH=62.4%:OH=59.2%,WG:GIH=58.7%:OH=65.3%,UB:GIH=57.8%:OH=55.8%,WU:GIH=57.4%:OH=58.4%,
+Celestial Colonnade,,,,R,3.18,,,62.5%,,,,,UR:GIH=63.4%:OH=63.8%,WG:GIH=63.3%:OH=63.7%,UG:GIH=62.7%:OH=67.9%,UB:GIH=62.6%:OH=67.9%,
+Contested War Zone,,,,R,6.69,,,,,,,,,,,,
+Creeping Tar Pit,,,,R,3.39,,,60.3%,,,,,BR:GIH=63.8%:OH=70.6%,UG:GIH=61.7%:OH=66.9%,UB:GIH=61.5%:OH=60.6%,BG:GIH=60.7%:OH=62.9%,
+Crystal Quarry,,,,R,6.14,,,,,,,,,,,,
+Deserted Temple,,,,M,6.27,,,,,,,,,,,,
+Dust Bowl,,,,M,6.03,,,,,,,,,,,,
+Echoing Deeps,,,,R,6.37,,,,,,,,,,,,
+Eldrazi Temple,,,,R,6.17,,,,,,,,,,,,
+Endless Sands,,,,R,5.76,,,,,,,,UG:GIH=60.3%:OH=48.8%,UB:GIH=58.3%:OH=60.0%,,,
+Gemstone Caverns,,,,M,4.26,,,,,,,,,,,,
+Grove of the Burnwillows,,,,M,4.42,,,,,,,,UG:GIH=59.3%:OH=59.6%,MULTI:GIH=53.5%:OH=51.9%,RG:GIH=51.3%:OH=56.5%,,
+High Market,,,,R,5.80,,,,,,,,WB:GIH=56.7%:OH=48.6%,BR:GIH=55.4%:OH=53.7%,UB:GIH=42.3%:OH=42.1%,,
+Hissing Quagmire,,,,R,4.10,,,56.5%,,,,,RG:GIH=64.0%:OH=69.2%,BG:GIH=58.5%:OH=61.5%,UG:GIH=57.8%:OH=62.0%,MULTI:GIH=57.2%:OH=61.8%,
+Inkmoth Nexus,,,,M,3.98,,,,,,,,UG:GIH=60.0%:OH=60.0%,UB:GIH=57.0%:OH=50.0%,WU:GIH=53.8%:OH=62.2%,,
+Inventors' Fair,,,,M,4.34,,,,,,,,UB:GIH=53.3%:OH=54.1%,UR:GIH=51.9%:OH=47.9%,,,
+Lavaclaw Reaches,,,,R,3.91,,,58.2%,,,,,BR:GIH=62.0%:OH=61.2%,UR:GIH=58.3%:OH=53.8%,RG:GIH=56.4%:OH=55.7%,MULTI:GIH=56.3%:OH=58.1%,
+Lotus Field,,,,M,4.68,,,,,,,,,,,,
+Lumbering Falls,,,,R,3.69,,,61.2%,,,,,RG:GIH=64.7%:OH=64.2%,WG:GIH=62.1%:OH=61.4%,BG:GIH=61.4%:OH=56.5%,UG:GIH=58.5%:OH=62.8%,
+Mana Confluence,,,,M,3.78,,,,,,,,MULTI:GIH=48.1%:OH=40.0%,,,,
+Meteor Crater,,,,R,5.29,,,,,,,,,,,,
+Mirrorpool,,,,M,5.32,,,,,,,,,,,,
+Mutavault,,,,M,3.22,,,,,,,,BR:GIH=62.5%:OH=56.4%,UG:GIH=61.7%:OH=53.8%,WB:GIH=60.1%:OH=67.3%,UB:GIH=57.2%:OH=52.4%,
+Mystifying Maze,,,,R,5.01,,,,,,,,UB:GIH=57.9%:OH=57.1%,UG:GIH=47.1%:OH=49.2%,,,
+Needle Spires,,,,R,4.31,,,,,,,,RG:GIH=61.0%:OH=70.0%,WR:GIH=58.5%:OH=57.6%,MULTI:GIH=49.7%:OH=41.0%,,
+Nesting Grounds,,,,R,6.04,,,,,,,,WG:GIH=50.7%:OH=51.9%,,,,
+Petrified Field,,,,M,6.56,,,,,,,,,,,,
+Plaza of Heroes,,,,M,5.60,,,,,,,,,,,,
+Power Depot,,,,R,5.06,,,,,,,,UB:GIH=51.9%:OH=55.1%,UR:GIH=48.9%:OH=49.4%,BR:GIH=47.2%:OH=54.9%,,
+Raging Ravine,,,,R,3.39,,,59.6%,,,,,RG:GIH=60.9%:OH=62.5%,UG:GIH=59.0%:OH=56.3%,BG:GIH=57.7%:OH=59.2%,MULTI:GIH=52.6%:OH=53.1%,
+Reflecting Pool,,,,M,4.57,,,,,,,,,,,,
+Scavenger Grounds,,,,R,6.64,,,,,,,,,,,,
+Shambling Vent,,,,R,3.87,,,60.1%,,,,,BG:GIH=65.4%:OH=61.7%,UB:GIH=60.2%:OH=63.1%,WB:GIH=59.2%:OH=59.3%,MULTI:GIH=57.0%:OH=56.8%,
+Stirring Wildwood,,,,R,3.76,,,,,,,,UG:GIH=59.8%:OH=60.2%,WG:GIH=59.8%:OH=60.6%,RG:GIH=56.0%:OH=64.2%,MULTI:GIH=53.8%:OH=57.1%,
+Strip Mine,,,,M,3.39,,,,,,,,BR:GIH=59.5%:OH=50.0%,WU:GIH=59.1%:OH=58.3%,RG:GIH=58.9%:OH=62.0%,UG:GIH=56.9%:OH=52.0%,
+Sunken Citadel,,,,R,4.53,,,56.5%,,,,,UG:GIH=65.1%:OH=64.7%,WU:GIH=59.9%:OH=62.0%,MULTI:GIH=59.4%:OH=62.1%,UR:GIH=57.4%:OH=58.9%,
+Swarmyard,,,,R,5.06,,,62.2%,,,,,UB:GIH=61.2%:OH=55.8%,RG:GIH=61.1%:OH=63.4%,UG:GIH=60.8%:OH=60.0%,WG:GIH=60.3%:OH=60.2%,
+Terrain Generator,,,,R,5.76,,,,,,,,,,,,
+Thespian's Stage,,,,R,6.22,,,,,,,,,,,,
+Wandering Fumarole,,,,R,4.23,,,59.0%,,,,,RG:GIH=58.8%:OH=64.7%,UG:GIH=57.0%:OH=63.0%,UB:GIH=57.0%:OH=58.5%,MULTI:GIH=56.8%:OH=54.2%,

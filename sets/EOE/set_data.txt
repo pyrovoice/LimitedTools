@@ -1,0 +1,38 @@
+Color	Wins	# Games	Win Rate
+Mono-color	1896	3299	57.5%
+Mono-White	317	536	59.1%
+Mono-Blue	278	499	55.7%
+Mono-Black	383	678	56.5%
+Mono-Red	150	279	53.8%
+Mono-Green	768	1307	58.8%
+Two-color	73475	131400	55.9%
+Azorius (WU)	7830	14041	55.8%
+Dimir (UB)	9143	16614	55.0%
+Rakdos (BR)	8597	15443	55.7%
+Gruul (RG)	8408	15048	55.9%
+Selesnya (GW)	7495	13357	56.1%
+Orzhov (WB)	7529	13327	56.5%
+Golgari (BG)	4947	8943	55.3%
+Simic (GU)	11107	19217	57.8%
+Izzet (UR)	5273	9671	54.5%
+Boros (RW)	3146	5739	54.8%
+Three-color	4910	9120	53.8%
+Jeskai (WUR)	142	277	51.3%
+Sultai (UBG)	943	1699	55.5%
+Mardu (BRW)	132	270	48.9%
+Temur (RGU)	1284	2312	55.5%
+Abzan (GWB)	247	485	50.9%
+Esper (WUB)	282	522	54.0%
+Grixis (UBR)	428	784	54.6%
+Jund (BRG)	573	1161	49.4%
+Naya (RGW)	310	567	54.7%
+Bant (GWU)	569	1043	54.6%
+Four-color	125	245	51.0%
+Not-Green (WUBR)	3	6	50.0%
+Not-White (UBRG)	60	120	50.0%
+Not-Blue (BRGW)	4	8	50.0%
+Not-Black (RGWU)	28	51	54.9%
+Not-Red (GWUB)	30	60	50.0%
+Five-color	13	24	54.2%
+All Colors (WUBRG)	13	24	54.2%
+All Decks	80419	144088	55.8%
